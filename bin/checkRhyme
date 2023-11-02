@@ -4,10 +4,13 @@
 # Creation Date: Thu Nov  2 13:17:18 PDT 2023
 # Last Modified: Thu Nov  2 14:22:46 PDT 2023
 # Filename:      bin/checkRhyme
-# vim:           ts=3
+# vim:           ts=3:nowrap
 # Syntax:        perl 5
 #
 # Description:   Check rhyme scheme information for possible errors.
+#              * Checks that there are 7 or 11 syllables.
+#              * Checks capitalization of rhyme scheme.
+#              * Checks that rhyme scheme letters are probably correct.
 #
 
 use Getopt::Long;
@@ -22,6 +25,7 @@ foreach my $file (@files) {
 exit 0;
 
 ###########################################################################
+
 
 ##############################
 ##
