@@ -28,6 +28,12 @@ download: clean
 	bin/downloadAtonFiles -d data/aton
 
 
+check: check-rhyme
+rhyme: check-rhyme
+check-rhyme:
+	bin/checkRhyme data/aton/*.aton
+
+
 clean:
 	-rm $(DATADIR)/tei/*.tei
 	-rm $(DATADIR)/aton/*.aton

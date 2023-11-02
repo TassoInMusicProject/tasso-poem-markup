@@ -1,0 +1,149 @@
+#!/usr/bin/perl
+#
+# Programmer:    Craig Stuart Sapp <craig.stanford.edu>
+# Creation Date: Thu Nov  2 13:17:18 PDT 2023
+# Last Modified: Thu Nov  2 14:22:46 PDT 2023
+# Filename:      bin/checkRhyme
+# vim:           ts=3
+# Syntax:        perl 5
+#
+# Description:   Check rhyme scheme information for possible errors.
+#
+
+use Getopt::Long;
+use strict;
+
+my @files = sort @ARGV;
+
+foreach my $file (@files) {
+	analyzeFile($file);
+}
+
+exit 0;
+
+###########################################################################
+
+##############################
+##
+## analyzeFile --
+##
+
+sub analyzeFile {
+	my ($filename) = @_;
+	open(FILE, $filename) or die "Cannot read $filename\n";
+	my @contents = <FILE>;
+	chomp @contents;
+	close FILE;
+	my $id = $filename;
+	$id =~ s/\.aton$//;
+
+	my @syllables;
+	my @rhymes;
+	my @counts;
+	my @strophes;
+	my @lines;
+
+	my $active;
+	my $syllable;
+	my $rhyme;
+	my $count;
+	my $lin;
+	my $strophe = 0;
+
+	for (my $i=0; $i<@contents; $i++) {
+		my $line = $contents[$i];
+		if ($line =~ /^\@([^:]+)\s*:\s*(.*)\s*$/) {
+			$active = $1;
+			my $value = $2;
+			my $line = 0;
+			$strophe++ if $active eq "MVERSE";
+			if (($active eq "MVERSE")&& ($line =~ /=[A-Za-z]/)) {
+				($syllable, $rhyme, $count) = getLineInfo($value);
+				$lin++;
+				@lines[$i] = $lin;
+				$strophes[$i]  = $strophe;
+				$syllables[$i] = $syllable;
+				$rhymes[$i]    = $rhyme;
+				$counts[$i]    = $count;
+			}
+			next;
+		}
+		next if $line =~ /^\@/;
+		next if $active ne "MVERSE";
+		($syllable, $rhyme, $count) = getLineInfo($line);
+		@lines[$i] = ++$lin;
+		$strophes[$i]  = $strophe;
+		$syllables[$i] = $syllable;
+		$rhymes[$i]    = $rhyme;
+		$counts[$i]    = $count;
+	}
+
+	my %rhymeMap = {};
+	
+	my $report = "";
+
+	for (my $i=0; $i<@counts; $i++) {
+		if (($i > 0) && ($strophes[$i] != $strophes[$i-1])) {
+			%rhymeMap = {};
+		}
+		next if $counts[$i] <= 0;
+		if (!(($counts[$i] == 7) || ($counts[$i] == 11))) {
+			$report .= "* Strange syllable count ($counts[$i]) in strophe $strophes[$i], at line $lines[$i].\n";
+		}
+		if (($counts[$i] == 7) && ($rhymes[$i] !~ /^[a-z]$/)) {
+			$report .= "* Capitalization problem for rhyme '$rhymes[$i]' in strophe $strophes[$i], at line $lines[$i] for $counts[$i] syllables.\n";
+		}
+		if (($counts[$i] == 11) && ($rhymes[$i] !~ /^[A-Z]$/)) {
+			$report .= "* Capitalization problem for rhyme '$rhymes[$i]' in strophe $strophes[$i], at line $lines[$i] for $counts[$i] syllables.\n";
+		}
+		my $r = lc($rhymes[$i]);
+		if ($rhymeMap{$r} =~ /^\s*$/) {
+			$rhymeMap{$r} = $syllables[$i];
+			$rhymeMap{$r} =~ s/^[^aeiouy]+//;
+		}
+		my $tsyl = $syllables[$i];
+		$tsyl =~ s/^[^aeiouy]+//;
+		if ($rhymeMap{$r} ne $tsyl) {
+			if ($rhymeMap{$r} =~ /$tsyl$/) {
+			} elsif ($tsyl =~ /$rhymeMap{$r}$/) {
+			} else {
+				$report .= "* Problem with rhyme scheme '$r': Syllable $syllables[$i] does not match previous rhyme $rhymeMap{$r}.\n";
+			}
+		}
+	}
+
+	if ($report !~ /^\s*$/) {
+		print "##############################################################\n";
+		print "\n";
+		print "FILE: $id.aton\n";
+		print "$report";
+		print "\n";
+	}
+}
+
+
+
+##############################
+##
+## getLineInfo -- Return the last syllable, rhyme letter and
+##     syllable count on the given line.
+##
+
+sub getLineInfo {
+	my ($line) = @_;
+	$line =~ s/^\s+//;
+	$line =~ s/\s+$//;
+	$line =~ s/--/+/g;  # ensure more recent accentuation marker for syllables
+	$line =~ /(.*)\s*=([A-Za-z]).*$/;
+	my $raw = $1;
+	my $rhyme = $2;
+	$raw =~ s/[+-]+$//;
+	my @syllables = split(/[\s-+]+/, $raw);
+	my $count = @syllables;
+	my $last = $syllables[$#syllables];
+	$last =~ s/[^A-Za-z]+$//;
+	return ($last, $rhyme, $count);
+}
+
+
+
