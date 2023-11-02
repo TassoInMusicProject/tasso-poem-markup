@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Tasso in Music: verse anlalytical encoding guidelines</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>For Emiliano and Craig</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital with examples from Tasso in Music Project</p>
+         </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+        <!-- metDecl defines the pattern to be used for metrycal analysis. TEI is agnostic -->
+        <!-- switched | to - and || to + to allow unambiguous patterns --> 
+        <metDecl type="met">
+           <metSym value="+">stressed syllable</metSym>
+           <metSym value="-">unstressed syllable</metSym>
+           <metSym value="_">elision (synalepha?)</metSym> 
+           <!-- See first verse for discussion -->
+           
+           <!-- NB not defining ' for a contraction, because that's a feature of the text (just like ' in that's).
+              If you're using it as a marker (e.g. adding it editorially) let me know and we can discuss further. 
+              -->
+        </metDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <lg> 
+            <!-- line group. This groups lines of verse according to any useful principle.
+               I typically use it for stanzas, while the entire poem can be wrapped either in an <lg>
+               or in a <div>, or sit directly in the body, depending on the nature of the text.
+            --> 
+            <l rhyme="a" met="-++--+-" n="settenario"> <!-- line of verse -->
+               <!-- ORIGINAL
+               A|mor|| l'al||ma m'al|lac||cia                          =a
+               -->
+               
+               <!-- Syllables (and other divisions) -->
+               <!-- the analytical element <seg> is used for feet (not quite applicable to italian verse), 
+                  metrical syllables and metrical analysis.
+               You can distinguish them with @type, but I think it's a bit redundant and it gets verbose.
+               I provide it only in the first line as an example.-->
+               
+               <!-- Meter -->
+               <!-- Use @met. See metDecl in header for key to the symbols.
+                  It can be specified at line level or syllable level (first line shows both).
+                  I would be inclined to encode it at syllable level omitting unstressed syllables.
+               -->
+               
+               <!-- Rhyme -->
+               <!-- See @rhyme attribute on <l> above. By default, TEI assumes the use of letters to identify rhymes 
+                  and a hyphen for lines that do not rhyme.
+                  There is no simple way to mark up the number of syllables. I recommend using @n with 
+                  appropriate terminology (e.g. settenario or endecasillabo). 
+                  (Also my understanding is that there can be more than 7 or 11 metric syllables to a settenario or endecasillabo, 
+                  so you may want this more precise encoding over a simple count).
+                  I would keep @rhyme only lowercase in order to stay close to the TEI recommendation 
+                  and to not represent two things with one character without a formal explanation. 
+               -->
+               
+               <!-- Enjambement -->
+               <!-- encoded on <l> with @enjamb. See examples in following lines -->
+               
+               <!-- Elision (synalepha?) -->
+               <!-- I don't think elision needs to be encoded explicitly since the entire syllable will
+                    be included in a <seg>, which already groups the word parts involved in 
+                    a single pronunciation unit. -->
+               <!-- If, however, this is to indicate a synalepha (or other phenomenon that
+                  affects the pronunciation as distinct from the grapheme), then I think it's worthwhile.
+                  The TEI Guidelines do not discuss this phenomenon, but I think the analytical 
+                  element <c> can help here. See example in a later verse.
+                  -->
+               
+               <!-- WHITE SPACE -->
+               <!-- white space handling gets tricky in analytical markup. There are two options:
+               1. use @xml:space="preserve" and do not format your elements. 
+                  You would have to do this at verse line level (I added an example in a comment below).
+               2. remove spaces between <seg>s at processing level and keep word boundary spaces
+                  within <seg>s (recommended)
+               -->
+               
+               <seg type="syl" met="-">A</seg>
+               <seg type="syl" met="-">mor </seg> <!-- NB the white space at the end -->
+               <seg type="syl" met="+">l'al</seg>
+               <seg type="syl" met="-">ma </seg>
+               <seg type="syl" met="-">m'al</seg>
+               <seg type="syl" met="+">lac</seg>
+               <seg type="syl" met="-">cia</seg> <!-- NB no need to add the white space here because of the new line marked by <l> -->
+               
+            </l>
+            <!-- PRESERVED WHITE SPACE EXAMPLE: (NB the escape symbol in met must be removed when removing the XML comment) -->
+            <!--<l xml:space="preserve" rhyme="a" met="-++-\-+-" n="settenario"><seg type="syl" met="-">A</seg><seg type="syl" met="-">mor</seg> <seg type="syl" met="+">l'al</seg><seg type="syl" met="-">ma</seg> <seg type="syl" met="-">m'al</seg><seg type="syl" met="+">lac</seg><seg type="syl" met="-">cia</seg></l>-->
+            
+            <!-- The following verse lines use only my recommendations between alternative encoding options. -->
+            <l rhyme="b" n="settenario">
+               <!-- ORIGINAL
+               Di dol||ci_as||pre| ca|te||ne:                          =b
+               -->
+               <seg>Di</seg>
+               <seg met="+">dol</seg>
+               <seg met="+">ci<c met="_"> </c>as</seg> <!-- Elision: example encoding for synalepha. -->
+               <seg>pre </seg>
+               <seg>ca</seg>
+               <seg met="+">te</seg>
+               <seg>ne</seg>
+            </l>
+            <l rhyme="c" n="endecasillabo" enjamb="weak"> <!-- Example of enjambement -->
+               <!-- ORIGINAL
+               Non mi do||gli_ io per ciò||, ma ben l'ac|cu||so        =C+
+               -->
+               <seg>Non </seg>
+               <seg>mi </seg>
+               <seg met="+">do</seg>
+               <seg>glio io </seg> <!-- Elision: alternatively, I think the <seg> grouping indicates the synalepha. -->               
+               <seg>per</seg>
+               <seg met="+">ciò </seg>
+               <seg>ma </seg>
+               <seg>ben </seg>
+               <seg>l'ac</seg>
+               <seg met="+">cu</seg>
+               <seg>so</seg>
+            </l>
+            <l rhyme="b" n="settenario" enjamb="hard">
+               <!-- ORIGINAL
+               Che mi le||ghi_ed af|fre||ne                            =b++
+               -->
+               <seg>Che </seg>
+               <seg>mi </seg>
+               <seg met="+">le</seg>
+               <seg>ghi ed </seg>               
+               <seg>af</seg>
+               <seg met="+">fre</seg>
+               <seg>ne</seg>
+            </l>
+            <l rhyme="a" n="settenario">
+               <!-- ORIGINAL
+               Che mi le||ghi_ed af|fre||ne                            =b++
+               -->
+               <seg>La </seg>
+               <seg>lin</seg>
+               <seg>gua a</seg>
+               <seg met="+">ciò </seg>               
+               <seg>ch'io</seg>
+               <seg met="+">tac</seg>
+               <seg>cia</seg>
+            </l>
+            <l rhyme="c" n="endecasillabo">
+               <!-- ORIGINAL
+               An|zi_a m|adon||na ti||mi|do_e con|fu||so               =C
+               -->
+               <seg>An </seg>
+               <seg>zi a</seg>
+               <seg>ma</seg>
+               <seg met="+">don</seg>               
+               <seg>na </seg>
+               <seg>ti</seg>
+               <seg>mi</seg>
+               <seg>do e</seg>
+               <seg>con</seg>
+               <seg met="+">fu</seg>
+               <seg>so</seg>
+            </l>
+            <l rhyme="c" n="settenario">
+               <!-- ORIGINAL
+               E 'n mia ra|gion|| de|lu||so.                           =c
+               -->
+               <seg>E 'n</seg> <!-- pretty sure there is an elision here -->
+               <seg>mia </seg>
+               <seg>ra</seg>
+               <seg met="+">gion </seg>               
+               <seg>de</seg>
+               <seg met="+">lu</seg>
+               <seg>so</seg>
+            </l>
+            <l rhyme="d" n="settenario" enjamb="hard">
+               <!-- ORIGINAL
+               Sci||ogli|, pie|to||so_A|mo||re,                        =d++
+               -->
+               <seg met="+">Scio</seg> <!-- pretty sure this is the sillabe and it's stressed -->
+               <seg>gli, </seg>
+               <seg>pie</seg>
+               <seg met="+">to</seg>               
+               <seg>so A</seg>
+               <seg met="+">mo</seg>
+               <seg>re</seg>
+            </l>
+            <l rhyme="e" n="settenario" enjamb="weak">
+               <!-- ORIGINAL
+               La lin||gua,_e se non vuo||i                            =e+
+               -->
+               <seg>La </seg>
+               <seg met="+">lin</seg>
+               <seg>gua, e</seg>
+               <seg>se </seg>               
+               <seg>non </seg>
+               <seg met="+">vuo</seg>
+               <seg>i</seg>
+            </l>
+            <l rhyme="e" n="endecasillabo">
+               <!-- ORIGINAL
+               Che mi strin||ga_un sol men de' lac||ci tuo||i,         =E
+               -->
+               <seg>Che </seg>
+               <seg>mi </seg>
+               <seg>string</seg>
+               <seg met="+">ga un</seg>               
+               <seg>sol </seg>
+               <seg>men </seg>
+               <seg>de' </seg>
+               <seg met="+">lac</seg>
+               <seg>ci </seg>
+               <seg met="+">tuo</seg>
+               <seg>i</seg>
+            </l>
+            <l rhyme="d" n="endecasillabo">
+               <!-- ORIGINAL
+               Tan||ti n'ag|giun||gi_in quel||la ve|ce al co||re.      =D
+               -->
+               <seg met="+">Tan</seg>
+               <seg>ti </seg>
+               <seg>n'ag</seg>
+               <seg met="+">giun</seg>               
+               <seg>gi in </seg>
+               <seg met="+">quel</seg>
+               <seg>la </seg>
+               <seg met="+">ve</seg> <!-- pretty sure this is stressed -->
+               <seg>ce </seg>
+               <seg>al </seg>
+               <seg met="+">co</seg>
+               <seg>re</seg>
+            </l>
+         </lg>
+         <lg>
+            <!-- another stanza -->
+            <l></l>
+         </lg>
+      </body>
+  </text>
+</TEI>

@@ -1,0 +1,109 @@
+#!/usr/bin/perl
+#
+# Programmer:    Craig Stuart Sapp <craig.stanford.edu>
+# Creation Date: Thu Nov  2 04:39:33 PDT 2023
+# Last Modified: Thu Nov  2 04:39:36 PDT 2023
+# Filename:      bin/downloadAtonFiles
+# vim:           ts=3
+# Syntax:        perl 5
+#
+# Description:   Download aton version of poem markup, splitting
+#                each into a separate file for conversion to TEI.
+#
+
+use Getopt::Long;
+use strict;
+
+my $targetdir = "data/aton";
+Getopt::Long::Configure("bundling");
+GetOptions (
+   'd|dir=s' => \$targetdir
+);
+
+die "Cannot find director $targetdir\n" if !-d $targetdir;
+
+# Literary markup:
+my $literaryUrl = "http://tassomusic.org/data/indexes/all-verses.aton";
+
+# Lyric markup:
+my $lyricURL = "http://tassomusic.org/data/indexes/all-settings.aton";
+
+
+my $wget = `which wget`;
+chomp $wget;
+die "Cannot find wget program\n" if $wget =~ /^\s*$/;
+
+my @lcontents = `wget $literaryUrl -O - 2> /dev/null`;
+chomp @lcontents;
+
+processLiteraryContents(@lcontents);
+
+exit(0);
+
+
+###########################################################################
+
+
+##############################
+##
+## processLiteraryContents --
+##
+## Template:
+##
+## @@BEGIN: VERSEDATA
+## @CATALOGNUM:	Trm0003
+## @MVERSE:
+##		Su l'am--pia fron--te_il cre--spo_o--ro lu-cen--te		=A+
+##		Spar--so_on-deg-gia--va,_e de' be--gli_oc--chi_il rag--gio	=B
+##		Al ter-re--no_ad-du-cea-- fio-ri--to mag--gio,			=B
+##		E lu--glio_a_i co--ri_ol--tre mi--su-ra_ar-den--te:		=A
+## @@END:		VERSEDATA
+##
+
+sub processLiteraryContents {
+	my @input = @_;
+	my $catalognum;
+	my $active;
+	my $data;
+	foreach my $line (@input)  {
+		if ($line =~ /^\@\@BEGIN:\s*VERSEDATA\s*$/) {
+			$catalognum = "";
+			$active = "";
+			$data = "";
+			next;
+		}
+		if ($line =~ /^\@\@END:\s*VERSEDATA\s*$/) {
+			if (($catalognum =~ /^\s*$/) or ($data =~ /^\s*$/) or ($data eq "\@MVERSE:\n")) {
+				$catalognum = "";
+				$active = "";
+				$data = "";
+				next;
+			}
+			print STDERR "Creating $targetdir/$catalognum.aton\n";
+			open(FILE, ">$targetdir/$catalognum.aton") or die "Cannot write $catalognum\n";
+			print FILE $data;
+			close FILE;
+			next;
+		}
+		if ($line =~ /^\@([^\@:]+)\s*:\s*(.*)\s*$/) {
+			$active = $1;
+			my $value = $2;
+			if ($active eq "MVERSE") {
+				$line =~ s/--/+/g;
+				$data .= "$line\n";
+			} elsif ($active eq "CATALOGNUM") {
+				$catalognum = $value;
+			}
+			next;
+		}
+		next if $line =~ /^\@/;
+		next if $line =~ /^\s*$/;
+		if ($active eq "MVERSE") {
+			$line =~ s/--/+/g;
+			$data .= "$line\n";
+		}
+	}
+}
+
+
+
