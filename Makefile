@@ -27,6 +27,9 @@ tei:
 download: clean
 	bin/downloadAtonFiles -d data/aton
 
+index:
+	ls data/tei/* | sed "s/\.tei$$//; s/data\/tei\///" > data/index.txt
+
 
 check: check-rhyme
 rhyme: check-rhyme
