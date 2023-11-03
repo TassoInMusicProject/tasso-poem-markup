@@ -142,7 +142,7 @@
 			</lg>
 			<lg>
 				<l rhyme="c" met="+--+-+-+-+-" n="endecasillabo">
-					<!-- INPUT: El+la, vol-gen+do gli_oc+chi_in dol+ci gi+ri, =c -->
+					<!-- INPUT: El+la, vol-gen+do gli_oc+chi_in dol+ci gi+ri, =C -->
 					<seg type="syl" met="+">El</seg>
 					<seg type="syl" met="-">la, </seg>
 					<seg type="syl" met="-">vol</seg>
