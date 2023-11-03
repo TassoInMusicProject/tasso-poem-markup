@@ -25,13 +25,12 @@
 	<text>
 		<body>
 			<lg>
-				<l rhyme="a" met="---+----+-+-" n="12" enjamb="yes">
-					<!-- INPUT: Lei nel par-tir+, lei nel tor-nar+ del So+le =A+ -->
+				<l rhyme="a" met="---+---+-+-" n="endecasillabo" enjamb="yes">
+					<!-- INPUT: Lei nel par-tir,+ lei nel tor-nar+ del So+le =A+ -->
 					<seg type="syl" met="-">Lei </seg>
 					<seg type="syl" met="-">nel </seg>
 					<seg type="syl" met="-">par</seg>
-					<seg type="syl" met="+">tir</seg>
-					<seg type="syl" met="-">, </seg>
+					<seg type="syl" met="+">tir, </seg>
 					<seg type="syl" met="-">lei </seg>
 					<seg type="syl" met="-">nel </seg>
 					<seg type="syl" met="-">tor</seg>

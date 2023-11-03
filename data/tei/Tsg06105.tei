@@ -123,13 +123,12 @@
 					<seg type="syl" met="+">li</seg>
 					<seg type="syl" met="-">ce</seg>
 				</l>
-				<l rhyme="c" met="---+----+-+-" n="12">
-					<!-- INPUT: Io mi ter-rò+, se_in voi ser-vir+ mi li+ce. =C -->
+				<l rhyme="c" met="---+---+-+-" n="endecasillabo">
+					<!-- INPUT: Io mi ter-rò,+ se_in voi ser-vir+ mi li+ce. =C -->
 					<seg type="syl" met="-">Io </seg>
 					<seg type="syl" met="-">mi </seg>
 					<seg type="syl" met="-">ter</seg>
-					<seg type="syl" met="+">rò</seg>
-					<seg type="syl" met="-">, </seg>
+					<seg type="syl" met="+">rò, </seg>
 					<seg type="syl" met="-">se<c met="_"> </c>in </seg>
 					<seg type="syl" met="-">voi </seg>
 					<seg type="syl" met="-">ser</seg>

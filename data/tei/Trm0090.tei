@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Tasso in Music Project: verse analytical encoding sample</title>
+			</titleStmt>
+			<publicationStmt>
+				<p>For Emiliano and Craig</p>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Born digital with examples from Tasso in Music Project</p>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<metDecl type="met">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+				<metSym value="_">elision (synalepha?)</metSym>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<lg>
+				<l rhyme="a" met="+-+--+-" n="settenario" enjamb="yes">
+					<!-- INPUT: Men+tre nu+bi di sde+gno =a+ -->
+					<seg type="syl" met="+">Men</seg>
+					<seg type="syl" met="-">tre </seg>
+					<seg type="syl" met="+">nu</seg>
+					<seg type="syl" met="-">bi </seg>
+					<seg type="syl" met="-">di </seg>
+					<seg type="syl" met="+">sde</seg>
+					<seg type="syl" met="-">gno</seg>
+				</l>
+				<l rhyme="b" met="-++--+-" n="settenario" enjamb="yes">
+					<!-- INPUT: Fra' vo+stri_oc+chi_e_'l mio co+re =b+ -->
+					<seg type="syl" met="-">Fra' </seg>
+					<seg type="syl" met="+">vo</seg>
+					<seg type="syl" met="+">stri<c met="_"> </c>oc</seg>
+					<seg type="syl" met="-">chi<c met="_"> </c>e<c met="_"> </c>'l </seg>
+					<seg type="syl" met="-">mio </seg>
+					<seg type="syl" met="+">co</seg>
+					<seg type="syl" met="-">re</seg>
+				</l>
+				<l rhyme="b" met="+--++--+-+-" n="endecasillabo">
+					<!-- INPUT: Fu+ro_in-ter-po+ste,_e+gli sof-frì+ l'ar-do+re. =B -->
+					<seg type="syl" met="+">Fu</seg>
+					<seg type="syl" met="-">ro<c met="_"> </c>in</seg>
+					<seg type="syl" met="-">ter</seg>
+					<seg type="syl" met="+">po</seg>
+					<seg type="syl" met="+">ste,<c met="_"> </c>e</seg>
+					<seg type="syl" met="-">gli </seg>
+					<seg type="syl" met="-">sof</seg>
+					<seg type="syl" met="+">frì </seg>
+					<seg type="syl" met="-">l'ar</seg>
+					<seg type="syl" met="+">do</seg>
+					<seg type="syl" met="-">re.</seg>
+				</l>
+				<l rhyme="c" met="--+--+-" n="settenario" enjamb="yes">
+					<!-- INPUT: Or che chia+ro si gi+ra =c+ -->
+					<seg type="syl" met="-">Or </seg>
+					<seg type="syl" met="-">che </seg>
+					<seg type="syl" met="+">chia</seg>
+					<seg type="syl" met="-">ro </seg>
+					<seg type="syl" met="-">si </seg>
+					<seg type="syl" met="+">gi</seg>
+					<seg type="syl" met="-">ra</seg>
+				</l>
+				<l rhyme="d" met="-----+-" n="settenario">
+					<!-- INPUT: Il sol di quei bei lu+mi =d -->
+					<seg type="syl" met="-">Il </seg>
+					<seg type="syl" met="-">sol </seg>
+					<seg type="syl" met="-">di </seg>
+					<seg type="syl" met="-">quei </seg>
+					<seg type="syl" met="-">bei </seg>
+					<seg type="syl" met="+">lu</seg>
+					<seg type="syl" met="-">mi</seg>
+				</l>
+				<l rhyme="d" met="++---+-" n="settenario">
+					<!-- INPUT: For+z'è+ che si con-su+mi =d -->
+					<seg type="syl" met="+">For</seg>
+					<seg type="syl" met="+">z'è </seg>
+					<seg type="syl" met="-">che </seg>
+					<seg type="syl" met="-">si </seg>
+					<seg type="syl" met="-">con</seg>
+					<seg type="syl" met="+">su</seg>
+					<seg type="syl" met="-">mi</seg>
+				</l>
+				<l rhyme="e" met="+--+---+-+-" n="endecasillabo">
+					<!-- INPUT: L'a+ni-ma_e-spo+sta_a sì gran fo+co_i-gnu+da. =E -->
+					<seg type="syl" met="+">L'a</seg>
+					<seg type="syl" met="-">ni</seg>
+					<seg type="syl" met="-">ma<c met="_"> </c>e</seg>
+					<seg type="syl" met="+">spo</seg>
+					<seg type="syl" met="-">sta<c met="_"> </c>a </seg>
+					<seg type="syl" met="-">sì </seg>
+					<seg type="syl" met="-">gran </seg>
+					<seg type="syl" met="+">fo</seg>
+					<seg type="syl" met="-">co<c met="_"> </c>i</seg>
+					<seg type="syl" met="+">gnu</seg>
+					<seg type="syl" met="-">da.</seg>
+				</l>
+				<l rhyme="c" met="-++--+-" n="settenario" enjamb="yes">
+					<!-- INPUT: Poi-ché+ dun+que può l'i+ra =c+ -->
+					<seg type="syl" met="-">Poi</seg>
+					<seg type="syl" met="+">ché </seg>
+					<seg type="syl" met="+">dun</seg>
+					<seg type="syl" met="-">que </seg>
+					<seg type="syl" met="-">può </seg>
+					<seg type="syl" met="+">l'i</seg>
+					<seg type="syl" met="-">ra</seg>
+				</l>
+				<l rhyme="f" met="-+-+-+-" n="settenario">
+					<!-- INPUT: Tem-prar+ sì_ar-den+te fa+ce =f -->
+					<seg type="syl" met="-">Tem</seg>
+					<seg type="syl" met="+">prar </seg>
+					<seg type="syl" met="-">sì<c met="_"> </c>ar</seg>
+					<seg type="syl" met="+">den</seg>
+					<seg type="syl" met="-">te </seg>
+					<seg type="syl" met="+">fa</seg>
+					<seg type="syl" met="-">ce</seg>
+				</l>
+				<l rhyme="f" met="---+-+-" n="settenario">
+					<!-- INPUT: Più che pie-tà+ non fa+ce, =f -->
+					<seg type="syl" met="-">Più </seg>
+					<seg type="syl" met="-">che </seg>
+					<seg type="syl" met="-">pie</seg>
+					<seg type="syl" met="+">tà </seg>
+					<seg type="syl" met="-">non </seg>
+					<seg type="syl" met="+">fa</seg>
+					<seg type="syl" met="-">ce,</seg>
+				</l>
+				<l rhyme="e" met="+--+--+--+-" n="endecasillabo">
+					<!-- INPUT: Sia+te-mi, pre+go, per pie+tà più cru+da. =E -->
+					<seg type="syl" met="+">Sia</seg>
+					<seg type="syl" met="-">te</seg>
+					<seg type="syl" met="-">mi, </seg>
+					<seg type="syl" met="+">pre</seg>
+					<seg type="syl" met="-">go, </seg>
+					<seg type="syl" met="-">per </seg>
+					<seg type="syl" met="+">pie</seg>
+					<seg type="syl" met="-">tà </seg>
+					<seg type="syl" met="-">più </seg>
+					<seg type="syl" met="+">cru</seg>
+					<seg type="syl" met="-">da.</seg>
+				</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

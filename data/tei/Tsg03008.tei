@@ -25,15 +25,14 @@
 	<text>
 		<body>
 			<lg>
-				<l rhyme="a" met="++---+--+-+-" n="12" enjamb="yes">
-					<!-- INPUT: Dun+que_o+ve tu, Sig-nor+, di mil+le ri+vi =A+ -->
+				<l rhyme="a" met="++---+-+-+-" n="endecasillabo" enjamb="yes">
+					<!-- INPUT: Dun+que_o+ve tu, Sig-nor,+ di mil+le ri+vi =A+ -->
 					<seg type="syl" met="+">Dun</seg>
 					<seg type="syl" met="+">que<c met="_"> </c>o</seg>
 					<seg type="syl" met="-">ve </seg>
 					<seg type="syl" met="-">tu, </seg>
 					<seg type="syl" met="-">Sig</seg>
-					<seg type="syl" met="+">nor</seg>
-					<seg type="syl" met="-">, </seg>
+					<seg type="syl" met="+">nor, </seg>
 					<seg type="syl" met="-">di </seg>
 					<seg type="syl" met="+">mil</seg>
 					<seg type="syl" met="-">le </seg>
@@ -124,15 +123,14 @@
 					<seg type="syl" met="+">fran</seg>
 					<seg type="syl" met="-">gi?</seg>
 				</l>
-				<l rhyme="c" met="+--+-+-+--+-" n="12">
-					<!-- INPUT: Pian+ger ben mer+ti_og-nor+, s’o+ra non pian+gi. =C -->
+				<l rhyme="c" met="+--+-++--+-" n="endecasillabo">
+					<!-- INPUT: Pian+ger ben mer+ti_og-nor,+ s’o+ra non pian+gi. =C -->
 					<seg type="syl" met="+">Pian</seg>
 					<seg type="syl" met="-">ger </seg>
 					<seg type="syl" met="-">ben </seg>
 					<seg type="syl" met="+">mer</seg>
 					<seg type="syl" met="-">ti<c met="_"> </c>og</seg>
-					<seg type="syl" met="+">nor</seg>
-					<seg type="syl" met="-">, </seg>
+					<seg type="syl" met="+">nor, </seg>
 					<seg type="syl" met="+">s’o</seg>
 					<seg type="syl" met="-">ra </seg>
 					<seg type="syl" met="-">non </seg>

@@ -95,15 +95,14 @@
 					<seg type="syl" met="+">fron</seg>
 					<seg type="syl" met="-">te,</seg>
 				</l>
-				<l rhyme="b" met="---+-+-+--+-" n="12">
-					<!-- INPUT: Non co-no-sciu+ta_an-cor+, sciol+se_e sco-prí+o. =B -->
+				<l rhyme="b" met="---+-++--+-" n="endecasillabo">
+					<!-- INPUT: Non co-no-sciu+ta_an-cor,+ sciol+se_e sco-prí+o. =B -->
 					<seg type="syl" met="-">Non </seg>
 					<seg type="syl" met="-">co</seg>
 					<seg type="syl" met="-">no</seg>
 					<seg type="syl" met="+">sciu</seg>
 					<seg type="syl" met="-">ta<c met="_"> </c>an</seg>
-					<seg type="syl" met="+">cor</seg>
-					<seg type="syl" met="-">, </seg>
+					<seg type="syl" met="+">cor, </seg>
 					<seg type="syl" met="+">sciol</seg>
 					<seg type="syl" met="-">se<c met="_"> </c>e </seg>
 					<seg type="syl" met="-">sco</seg>

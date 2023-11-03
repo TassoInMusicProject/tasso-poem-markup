@@ -39,15 +39,14 @@
 					<seg type="syl" met="+">sen</seg>
 					<seg type="syl" met="-">ti,</seg>
 				</l>
-				<l rhyme="b" met="--+--+-+--+-" n="12">
-					<!-- INPUT: Non ten’-ven+go_a pri-var+: go+di pur d’es+so. =B -->
+				<l rhyme="b" met="--+--++--+-" n="endecasillabo">
+					<!-- INPUT: Non ten’-ven+go_a pri-var:+ go+di pur d’es+so. =B -->
 					<seg type="syl" met="-">Non </seg>
 					<seg type="syl" met="-">ten’</seg>
 					<seg type="syl" met="+">ven</seg>
 					<seg type="syl" met="-">go<c met="_"> </c>a </seg>
 					<seg type="syl" met="-">pri</seg>
-					<seg type="syl" met="+">var</seg>
-					<seg type="syl" met="-">: </seg>
+					<seg type="syl" met="+">var: </seg>
 					<seg type="syl" met="+">go</seg>
 					<seg type="syl" met="-">di </seg>
 					<seg type="syl" met="-">pur </seg>

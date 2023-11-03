@@ -123,13 +123,12 @@
 					<seg type="syl" met="+">re</seg>
 					<seg type="syl" met="-">sti?</seg>
 				</l>
-				<l rhyme="c" met="-+-+----+-+-" n="12">
-					<!-- INPUT: Po-trai+ ne-gar+, poi che fug-gir+ po-te+sti. =C -->
+				<l rhyme="c" met="-+-+---+-+-" n="endecasillabo">
+					<!-- INPUT: Po-trai+ ne-gar,+ poi che fug-gir+ po-te+sti. =C -->
 					<seg type="syl" met="-">Po</seg>
 					<seg type="syl" met="+">trai </seg>
 					<seg type="syl" met="-">ne</seg>
-					<seg type="syl" met="+">gar</seg>
-					<seg type="syl" met="-">, </seg>
+					<seg type="syl" met="+">gar, </seg>
 					<seg type="syl" met="-">poi </seg>
 					<seg type="syl" met="-">che </seg>
 					<seg type="syl" met="-">fug</seg>

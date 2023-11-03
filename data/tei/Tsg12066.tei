@@ -25,8 +25,8 @@
 	<text>
 		<body>
 			<lg>
-				<l rhyme="a" met="-+-+---+--+-" n="12" enjamb="yes">
-					<!-- INPUT: “A-mi+co_hai vin+to;_io ti per-don+, per-do+na =A+ -->
+				<l rhyme="a" met="-+-+---+-+-" n="endecasillabo" enjamb="yes">
+					<!-- INPUT: “A-mi+co_hai vin+to;_io ti per-don,+ per-do+na =A+ -->
 					<seg type="syl" met="-">“A</seg>
 					<seg type="syl" met="+">mi</seg>
 					<seg type="syl" met="-">co<c met="_"> </c>hai </seg>
@@ -34,8 +34,7 @@
 					<seg type="syl" met="-">to;<c met="_"> </c>io </seg>
 					<seg type="syl" met="-">ti </seg>
 					<seg type="syl" met="-">per</seg>
-					<seg type="syl" met="+">don</seg>
-					<seg type="syl" met="-">, </seg>
+					<seg type="syl" met="+">don, </seg>
 					<seg type="syl" met="-">per</seg>
 					<seg type="syl" met="+">do</seg>
 					<seg type="syl" met="-">na</seg>

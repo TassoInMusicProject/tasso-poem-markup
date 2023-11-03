@@ -26,15 +26,15 @@
 		<body>
 			<lg>
 				<l rhyme="a" met="--++---+-+-" n="endecasillabo" enjamb="yes">
-					<!-- INPUT: Deh, poi-ché+ sde+-gni me, com’e+gli_è va+go =A+ -->
-					<seg type="syl" met="-">Deh, </seg>
-					<seg type="syl" met="-">poi</seg>
-					<seg type="syl" met="+">ché </seg>
+					<!-- INPUT: Deh! poi che+ sde+gni me, com’-e+gli_è va+go =A+ -->
+					<seg type="syl" met="-">Deh! </seg>
+					<seg type="syl" met="-">poi </seg>
+					<seg type="syl" met="+">che </seg>
 					<seg type="syl" met="+">sde</seg>
-					<seg type="syl" met="-"></seg>
 					<seg type="syl" met="-">gni </seg>
 					<seg type="syl" met="-">me, </seg>
-					<seg type="syl" met="+">com’e</seg>
+					<seg type="syl" met="-">com’</seg>
+					<seg type="syl" met="+">e</seg>
 					<seg type="syl" met="-">gli<c met="_"> </c>è </seg>
 					<seg type="syl" met="+">va</seg>
 					<seg type="syl" met="-">go</seg>
@@ -68,7 +68,7 @@
 					<seg type="syl" met="-">go,</seg>
 				</l>
 				<l rhyme="b" met="--+--+---+-" n="endecasillabo">
-					<!-- INPUT: Gio-i-reb+be fe-li+ce_in se ri-vol+to. =B -->
+					<!-- INPUT: Gio-i-reb+be fe-li+ce_in sé ri-vol+to. =B -->
 					<seg type="syl" met="-">Gio</seg>
 					<seg type="syl" met="-">i</seg>
 					<seg type="syl" met="+">reb</seg>
@@ -76,7 +76,7 @@
 					<seg type="syl" met="-">fe</seg>
 					<seg type="syl" met="+">li</seg>
 					<seg type="syl" met="-">ce<c met="_"> </c>in </seg>
-					<seg type="syl" met="-">se </seg>
+					<seg type="syl" met="-">sé </seg>
 					<seg type="syl" met="-">ri</seg>
 					<seg type="syl" met="+">vol</seg>
 					<seg type="syl" met="-">to.</seg>

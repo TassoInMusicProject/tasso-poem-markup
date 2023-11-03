@@ -12,20 +12,25 @@
 DATADIR = data
 
 all:
+	@echo "make update	== Typical use of this makefile."
 	@echo "make download	== Download ATON files containing poetic markup."
 	@echo "make tei		== Convert ATON files into TEI files."
+	@echo "make index		== Create file list data/index.txt for use on TiMP website markup pages."
 	@echo "make clean	== Delete ATON and TEI files containing poetic markup."
+
+update: download tei index
 
 
 tei:
-	for aton in data/aton/*.aton;                                                   \
-	do                                                                              \
-	   cat $$aton | bin/downloadAtonFiles > data/tei/$$(basename $$aton .aton).tei; \
+	for aton in data/aton/*.aton;                                               \
+	do                                                                          \
+	   cat $$aton | bin/makeMarkupTei > data/tei/$$(basename $$aton .aton).tei; \
 	done
 
 
 download: clean
 	bin/downloadAtonFiles -d data/aton
+
 
 index:
 	ls data/tei/* | sed "s/\.tei$$//; s/data\/tei\///" > data/index.txt
@@ -40,5 +45,6 @@ check-rhyme:
 clean:
 	-rm $(DATADIR)/tei/*.tei
 	-rm $(DATADIR)/aton/*.aton
+
 
 

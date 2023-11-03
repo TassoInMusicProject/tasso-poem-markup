@@ -25,13 +25,12 @@
 	<text>
 		<body>
 			<lg>
-				<l rhyme="a" met="+--+----+-+-" n="12" enjamb="yes">
-					<!-- INPUT: For+se_av-ver-rà+, se_’l Ciel be-ni+gno_a-scol+ta =A+ -->
+				<l rhyme="a" met="+--+---+-+-" n="endecasillabo" enjamb="yes">
+					<!-- INPUT: For+se_av-ver-rà,+ se_’l Ciel be-ni+gno_a-scol+ta =A+ -->
 					<seg type="syl" met="+">For</seg>
 					<seg type="syl" met="-">se<c met="_"> </c>av</seg>
 					<seg type="syl" met="-">ver</seg>
-					<seg type="syl" met="+">rà</seg>
-					<seg type="syl" met="-">, </seg>
+					<seg type="syl" met="+">rà, </seg>
 					<seg type="syl" met="-">se<c met="_"> </c>’l </seg>
 					<seg type="syl" met="-">Ciel </seg>
 					<seg type="syl" met="-">be</seg>

@@ -25,13 +25,12 @@
 	<text>
 		<body>
 			<lg>
-				<l rhyme="a" met="---+----+-+-" n="12" enjamb="yes">
-					<!-- INPUT: Poi co-min-ciò+: non as-pet-tar+ ch’io pre+ghi, =A+ -->
+				<l rhyme="a" met="---+---+-+-" n="endecasillabo" enjamb="yes">
+					<!-- INPUT: Poi co-min-ciò:+ non as-pet-tar+ ch’io pre+ghi, =A+ -->
 					<seg type="syl" met="-">Poi </seg>
 					<seg type="syl" met="-">co</seg>
 					<seg type="syl" met="-">min</seg>
-					<seg type="syl" met="+">ciò</seg>
-					<seg type="syl" met="-">: </seg>
+					<seg type="syl" met="+">ciò: </seg>
 					<seg type="syl" met="-">non </seg>
 					<seg type="syl" met="-">as</seg>
 					<seg type="syl" met="-">pet</seg>
@@ -40,11 +39,10 @@
 					<seg type="syl" met="+">pre</seg>
 					<seg type="syl" met="-">ghi,</seg>
 				</l>
-				<l rhyme="b" met="-+--+-+-+-+-" n="12">
-					<!-- INPUT: Cru-del+, te, co+me_a-man+te_a-man+te de+ve: =B -->
+				<l rhyme="b" met="-+-+-+-+-+-" n="endecasillabo">
+					<!-- INPUT: Cru-del,+ te, co+me_a-man+te_a-man+te de+ve: =B -->
 					<seg type="syl" met="-">Cru</seg>
-					<seg type="syl" met="+">del</seg>
-					<seg type="syl" met="-">, </seg>
+					<seg type="syl" met="+">del, </seg>
 					<seg type="syl" met="-">te, </seg>
 					<seg type="syl" met="+">co</seg>
 					<seg type="syl" met="-">me<c met="_"> </c>a</seg>

@@ -95,13 +95,12 @@
 					<seg type="syl" met="+">ar</seg>
 					<seg type="syl" met="-">te</seg>
 				</l>
-				<l rhyme="b" met="+--+----+-+-" n="12">
-					<!-- INPUT: Tan+ta_il par-lar+, che fu mi-ra+bil mo+stro. =B -->
+				<l rhyme="b" met="+--+---+-+-" n="endecasillabo">
+					<!-- INPUT: Tan+ta_il par-lar,+ che fu mi-ra+bil mo+stro. =B -->
 					<seg type="syl" met="+">Tan</seg>
 					<seg type="syl" met="-">ta<c met="_"> </c>il </seg>
 					<seg type="syl" met="-">par</seg>
-					<seg type="syl" met="+">lar</seg>
-					<seg type="syl" met="-">, </seg>
+					<seg type="syl" met="+">lar, </seg>
 					<seg type="syl" met="-">che </seg>
 					<seg type="syl" met="-">fu </seg>
 					<seg type="syl" met="-">mi</seg>

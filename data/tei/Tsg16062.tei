@@ -26,12 +26,12 @@
 		<body>
 			<lg>
 				<l rhyme="a" met="---+---+-+-" n="endecasillabo" enjamb="yes">
-					<!-- INPUT: Or che fa-rà?+ dee su l’i-gnu+da_a-re+na =A+ -->
+					<!-- INPUT: Or che fa-rà?+ Dee su l’i-gnu+da_a-re+na =A+ -->
 					<seg type="syl" met="-">Or </seg>
 					<seg type="syl" met="-">che </seg>
 					<seg type="syl" met="-">fa</seg>
 					<seg type="syl" met="+">rà? </seg>
-					<seg type="syl" met="-">dee </seg>
+					<seg type="syl" met="-">Dee </seg>
 					<seg type="syl" met="-">su </seg>
 					<seg type="syl" met="-">l’i</seg>
 					<seg type="syl" met="+">gnu</seg>

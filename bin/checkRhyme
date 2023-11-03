@@ -46,6 +46,7 @@ sub analyzeFile {
 	my @counts;
 	my @strophes;
 	my @lines;
+	my @inputs;
 
 	my $active;
 	my $syllable;
@@ -60,15 +61,16 @@ sub analyzeFile {
 			$active = $1;
 			my $value = $2;
 			my $line = 0;
+			$lin = 0;
 			$strophe++ if $active eq "MVERSE";
 			if (($active eq "MVERSE")&& ($line =~ /=[A-Za-z]/)) {
 				($syllable, $rhyme, $count) = getLineInfo($value);
-				$lin++;
-				@lines[$i] = $lin;
+				@lines[$i] = ++$lin;
 				$strophes[$i]  = $strophe;
 				$syllables[$i] = $syllable;
 				$rhymes[$i]    = $rhyme;
 				$counts[$i]    = $count;
+				$inputs[$i]    = $line;
 			}
 			next;
 		}
@@ -80,6 +82,7 @@ sub analyzeFile {
 		$syllables[$i] = $syllable;
 		$rhymes[$i]    = $rhyme;
 		$counts[$i]    = $count;
+		$inputs[$i]    = $line;
 	}
 
 	my %rhymeMap = {};
@@ -93,6 +96,7 @@ sub analyzeFile {
 		next if $counts[$i] <= 0;
 		if (!(($counts[$i] == 7) || ($counts[$i] == 11))) {
 			$report .= "* Strange syllable count ($counts[$i]) in strophe $strophes[$i], at line $lines[$i].\n";
+			$report .= "$inputs[$i]\n";
 		}
 		if (($counts[$i] == 7) && ($rhymes[$i] !~ /^[a-z]$/)) {
 			$report .= "* Capitalization problem for rhyme '$rhymes[$i]' in strophe $strophes[$i], at line $lines[$i] for $counts[$i] syllables.\n";
@@ -120,6 +124,7 @@ sub analyzeFile {
 		print "##############################################################\n";
 		print "\n";
 		print "FILE: $id.aton\n";
+		print "URL: https://www.tassomusic.org/markup?id=$id\n";
 		print "$report";
 		print "\n";
 	}
@@ -135,9 +140,14 @@ sub analyzeFile {
 
 sub getLineInfo {
 	my ($line) = @_;
+	$line =~ s/_&mdash;_/_/g;
+	$line =~ s/&mdash;/ /g;
+	$line =~ s/\?//g;
+	$line =~ s/—/ /g;
 	$line =~ s/^\s+//;
 	$line =~ s/\s+$//;
 	$line =~ s/--/+/g;  # ensure more recent accentuation marker for syllables
+	# $line =~ s/([+-])([^A-Za-z ])/$2$1/g; # mio+, to mio,+
 	$line =~ /(.*)\s*=([A-Za-z]).*$/;
 	my $raw = $1;
 	my $rhyme = $2;

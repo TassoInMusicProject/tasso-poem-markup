@@ -36,24 +36,23 @@
 					<seg type="syl" met="-">cia</seg>
 				</l>
 				<l rhyme="b" met="-++--+-" n="settenario">
-					<!-- INPUT: Di dol+ci_as+pre- ca-te+ne: =b -->
+					<!-- INPUT: Di dol+ci_a+spre- ca-te+ne: =b -->
 					<seg type="syl" met="-">Di </seg>
 					<seg type="syl" met="+">dol</seg>
-					<seg type="syl" met="+">ci<c met="_"> </c>as</seg>
-					<seg type="syl" met="-">pre </seg>
+					<seg type="syl" met="+">ci<c met="_"> </c>a</seg>
+					<seg type="syl" met="-">spre </seg>
 					<seg type="syl" met="-">ca</seg>
 					<seg type="syl" met="+">te</seg>
 					<seg type="syl" met="-">ne:</seg>
 				</l>
-				<l rhyme="c" met="--++-+----+-" n="12" enjamb="yes">
-					<!-- INPUT: Non mi do+glio_io+ per ciò+, ma ben l'ac-cu+so =C+ -->
+				<l rhyme="c" met="--++-+---+-" n="endecasillabo" enjamb="yes">
+					<!-- INPUT: Non mi do+glio_io+ per ciò,+ ma ben l'ac-cu+so =C+ -->
 					<seg type="syl" met="-">Non </seg>
 					<seg type="syl" met="-">mi </seg>
 					<seg type="syl" met="+">do</seg>
 					<seg type="syl" met="+">glio<c met="_"> </c>io </seg>
 					<seg type="syl" met="-">per </seg>
-					<seg type="syl" met="+">ciò</seg>
-					<seg type="syl" met="-">, </seg>
+					<seg type="syl" met="+">ciò, </seg>
 					<seg type="syl" met="-">ma </seg>
 					<seg type="syl" met="-">ben </seg>
 					<seg type="syl" met="-">l'ac</seg>
@@ -61,7 +60,7 @@
 					<seg type="syl" met="-">so</seg>
 				</l>
 				<l rhyme="b" met="--+--+-" n="settenario" enjamb="yes">
-					<!-- INPUT: Che mi le+ghi_ed af-fre+ne =b++ -->
+					<!-- INPUT: Che mi le+ghi_ed af-fre+ne =b+ -->
 					<seg type="syl" met="-">Che </seg>
 					<seg type="syl" met="-">mi </seg>
 					<seg type="syl" met="+">le</seg>
@@ -105,7 +104,7 @@
 					<seg type="syl" met="-">so.</seg>
 				</l>
 				<l rhyme="d" met="+--+-+-" n="settenario" enjamb="yes">
-					<!-- INPUT: Scio+gli, pie-to+so_A-mo+re, =d++ -->
+					<!-- INPUT: Scio+gli, pie-to+so_A-mo+re, =d+ -->
 					<seg type="syl" met="+">Scio</seg>
 					<seg type="syl" met="-">gli, </seg>
 					<seg type="syl" met="-">pie</seg>

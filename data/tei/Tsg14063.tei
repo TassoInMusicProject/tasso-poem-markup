@@ -26,11 +26,11 @@
 		<body>
 			<lg>
 				<l rhyme="a" met="+--+-+-+-+-" n="endecasillabo">
-					<!-- INPUT: Fol+li, per-chè+ get-ta+te_il ca+ro do+no, =A -->
+					<!-- INPUT: Fol+li, per-ché+ get-ta+te_il ca+ro do+no, =A -->
 					<seg type="syl" met="+">Fol</seg>
 					<seg type="syl" met="-">li, </seg>
 					<seg type="syl" met="-">per</seg>
-					<seg type="syl" met="+">chè </seg>
+					<seg type="syl" met="+">ché </seg>
 					<seg type="syl" met="-">get</seg>
 					<seg type="syl" met="+">ta</seg>
 					<seg type="syl" met="-">te<c met="_"> </c>il </seg>

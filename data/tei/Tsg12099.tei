@@ -25,15 +25,14 @@
 	<text>
 		<body>
 			<lg>
-				<l rhyme="a" met="--+--+--+-+-" n="12">
-					<!-- INPUT: Ed a-man+do mor-rò+: fe-li+ce gior+no =A -->
+				<l rhyme="a" met="--+--+-+-+-" n="endecasillabo">
+					<!-- INPUT: Ed a-man+do mor-rò:+ fe-li+ce gior+no =A -->
 					<seg type="syl" met="-">Ed </seg>
 					<seg type="syl" met="-">a</seg>
 					<seg type="syl" met="+">man</seg>
 					<seg type="syl" met="-">do </seg>
 					<seg type="syl" met="-">mor</seg>
-					<seg type="syl" met="+">rò</seg>
-					<seg type="syl" met="-">: </seg>
+					<seg type="syl" met="+">rò: </seg>
 					<seg type="syl" met="-">fe</seg>
 					<seg type="syl" met="+">li</seg>
 					<seg type="syl" met="-">ce </seg>

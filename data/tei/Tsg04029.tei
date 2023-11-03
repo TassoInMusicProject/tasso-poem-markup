@@ -81,11 +81,10 @@
 					<seg type="syl" met="+">pa</seg>
 					<seg type="syl" met="-">re:</seg>
 				</l>
-				<l rhyme="a" met="-+--+---+-+-" n="12">
-					<!-- INPUT: Co-sì+, qua-lor+ si ras-se-re+na_il cie+lo, =A -->
+				<l rhyme="a" met="-+-+---+-+-" n="endecasillabo">
+					<!-- INPUT: Co-sì,+ qua-lor+ si ras-se-re+na_il cie+lo, =A -->
 					<seg type="syl" met="-">Co</seg>
-					<seg type="syl" met="+">sì</seg>
-					<seg type="syl" met="-">, </seg>
+					<seg type="syl" met="+">sì, </seg>
 					<seg type="syl" met="-">qua</seg>
 					<seg type="syl" met="+">lor </seg>
 					<seg type="syl" met="-">si </seg>

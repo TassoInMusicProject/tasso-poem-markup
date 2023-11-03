@@ -53,15 +53,14 @@
 					<seg type="syl" met="+">pre</seg>
 					<seg type="syl" met="-">me.</seg>
 				</l>
-				<l rhyme="a" met="+-+--+----+-" n="12" enjamb="yes">
-					<!-- INPUT: El+la, men+tre ca-dea+, la vo-ce_af-flit+ta =A+ -->
+				<l rhyme="a" met="+-+--+---+-" n="endecasillabo" enjamb="yes">
+					<!-- INPUT: El+la, men+tre ca-dea,+ la vo-ce_af-flit+ta =A+ -->
 					<seg type="syl" met="+">El</seg>
 					<seg type="syl" met="-">la, </seg>
 					<seg type="syl" met="+">men</seg>
 					<seg type="syl" met="-">tre </seg>
 					<seg type="syl" met="-">ca</seg>
-					<seg type="syl" met="+">dea</seg>
-					<seg type="syl" met="-">, </seg>
+					<seg type="syl" met="+">dea, </seg>
 					<seg type="syl" met="-">la </seg>
 					<seg type="syl" met="-">vo</seg>
 					<seg type="syl" met="-">ce<c met="_"> </c>af</seg>
@@ -96,8 +95,8 @@
 					<seg type="syl" met="+">dit</seg>
 					<seg type="syl" met="-">ta;</seg>
 				</l>
-				<l rhyme="b" met="+------+--+-" n="12">
-					<!-- INPUT: Spir+to di fe, di ca-ri-tà+, di spe+me: =B -->
+				<l rhyme="b" met="+------+-+-" n="endecasillabo">
+					<!-- INPUT: Spir+to di fe, di ca-ri-tà,+ di spe+me: =B -->
 					<seg type="syl" met="+">Spir</seg>
 					<seg type="syl" met="-">to </seg>
 					<seg type="syl" met="-">di </seg>
@@ -105,8 +104,7 @@
 					<seg type="syl" met="-">di </seg>
 					<seg type="syl" met="-">ca</seg>
 					<seg type="syl" met="-">ri</seg>
-					<seg type="syl" met="+">tà</seg>
-					<seg type="syl" met="-">, </seg>
+					<seg type="syl" met="+">tà, </seg>
 					<seg type="syl" met="-">di </seg>
 					<seg type="syl" met="+">spe</seg>
 					<seg type="syl" met="-">me:</seg>

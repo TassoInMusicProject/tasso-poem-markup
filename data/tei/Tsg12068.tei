@@ -123,12 +123,11 @@
 					<seg type="syl" met="+">va</seg>
 					<seg type="syl" met="-">ce</seg>
 				</l>
-				<l rhyme="c" met="--+-+-+-+-+-" n="12">
-					<!-- INPUT: Dir pa-rea+: s’a+pre_il Cie+lo:_io va+do_in pa+ce. =C -->
+				<l rhyme="c" met="--++-+-+-+-" n="endecasillabo">
+					<!-- INPUT: Dir pa-rea:+ s’a+pre_il Cie+lo:_io va+do_in pa+ce. =C -->
 					<seg type="syl" met="-">Dir </seg>
 					<seg type="syl" met="-">pa</seg>
-					<seg type="syl" met="+">rea</seg>
-					<seg type="syl" met="-">: </seg>
+					<seg type="syl" met="+">rea: </seg>
 					<seg type="syl" met="+">s’a</seg>
 					<seg type="syl" met="-">pre<c met="_"> </c>il </seg>
 					<seg type="syl" met="+">Cie</seg>

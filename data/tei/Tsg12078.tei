@@ -26,13 +26,13 @@
 		<body>
 			<lg>
 				<l rhyme="a" met="-+-+--+--+-" n="endecasillabo" enjamb="yes">
-					<!-- INPUT: Ma do+ve_(oh las+so me!) do+ve re-sta+ro =A+ -->
+					<!-- INPUT: Ma do+ve,_oh las+so me! do+ve re-sta+ro =A+ -->
 					<seg type="syl" met="-">Ma </seg>
 					<seg type="syl" met="+">do</seg>
-					<seg type="syl" met="-">ve<c met="_"> </c>(oh </seg>
+					<seg type="syl" met="-">ve,<c met="_"> </c>oh </seg>
 					<seg type="syl" met="+">las</seg>
 					<seg type="syl" met="-">so </seg>
-					<seg type="syl" met="-">me!) </seg>
+					<seg type="syl" met="-">me! </seg>
 					<seg type="syl" met="+">do</seg>
 					<seg type="syl" met="-">ve </seg>
 					<seg type="syl" met="-">re</seg>

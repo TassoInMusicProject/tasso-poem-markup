@@ -53,11 +53,10 @@
 					<seg type="syl" met="+">pian</seg>
 					<seg type="syl" met="-">te;</seg>
 				</l>
-				<l rhyme="a" met="-+-----++-+-" n="12">
-					<!-- INPUT: Per-ché+, se fia ch’a le vo+str’om+bre gra+te =A -->
+				<l rhyme="a" met="-+----++-+-" n="endecasillabo">
+					<!-- INPUT: Per-ché,+ se fia ch’a le vo+str’om+bre gra+te =A -->
 					<seg type="syl" met="-">Per</seg>
-					<seg type="syl" met="+">ché</seg>
-					<seg type="syl" met="-">, </seg>
+					<seg type="syl" met="+">ché, </seg>
 					<seg type="syl" met="-">se </seg>
 					<seg type="syl" met="-">fia </seg>
 					<seg type="syl" met="-">ch’a </seg>
