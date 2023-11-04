@@ -52,6 +52,7 @@ exit(0);
 ##
 ## @@BEGIN: VERSEDATA
 ## @CATALOGNUM:	Trm0003
+## @TITLE:	Su l'ampia fronte il crespo
 ## @MVERSE:
 ##		Su l'am--pia fron--te_il cre--spo_o--ro lu-cen--te		=A+
 ##		Spar--so_on-deg-gia--va,_e de' be--gli_oc--chi_il rag--gio	=B
@@ -63,6 +64,7 @@ exit(0);
 sub processLiteraryContents {
 	my @input = @_;
 	my $catalognum;
+	my $title;
 	my $active;
 	my $data;
 	foreach my $line (@input)  {
@@ -81,6 +83,8 @@ sub processLiteraryContents {
 			}
 			print STDERR "Creating $targetdir/$catalognum.aton\n";
 			open(FILE, ">$targetdir/$catalognum.aton") or die "Cannot write $catalognum\n";
+			print FILE "\@CATALOGNUM: $catalognum\n";
+			print FILE "\@TITLE: $title\n";
 			print FILE $data;
 			close FILE;
 			next;
@@ -93,6 +97,8 @@ sub processLiteraryContents {
 				$data .= "$line\n";
 			} elsif ($active eq "CATALOGNUM") {
 				$catalognum = $value;
+			} elsif ($active eq "TITLE") {
+				$title = $value;
 			}
 			next;
 		}

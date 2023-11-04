@@ -5,10 +5,11 @@
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>Tasso in Music Project: verse analytical encoding sample</title>
+				<title>Fa nove crespe l'aura al crin disciolto</title>
 			</titleStmt>
 			<publicationStmt>
-				<p>For Emiliano and Craig</p>
+				<publisher>Tasso in Music Project</publisher>
+				<idno>Tsg04030</idno>
 			</publicationStmt>
 			<sourceDesc>
 				<p>Born digital with examples from Tasso in Music Project</p>

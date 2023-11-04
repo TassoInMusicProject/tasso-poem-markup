@@ -5,10 +5,11 @@
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>Tasso in Music Project: verse analytical encoding sample</title>
+				<title>Aggiungi a questo ancor quel ch'a maggiore</title>
 			</titleStmt>
 			<publicationStmt>
-				<p>For Emiliano and Craig</p>
+				<publisher>Tasso in Music Project</publisher>
+				<idno>Tsg16046</idno>
 			</publicationStmt>
 			<sourceDesc>
 				<p>Born digital with examples from Tasso in Music Project</p>

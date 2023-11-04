@@ -5,10 +5,11 @@
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>Tasso in Music Project: verse analytical encoding sample</title>
+				<title>O giovinetti, mentre Aprile e Maggio</title>
 			</titleStmt>
 			<publicationStmt>
-				<p>For Emiliano and Craig</p>
+				<publisher>Tasso in Music Project</publisher>
+				<idno>Tsg14062</idno>
 			</publicationStmt>
 			<sourceDesc>
 				<p>Born digital with examples from Tasso in Music Project</p>

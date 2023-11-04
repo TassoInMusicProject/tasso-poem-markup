@@ -5,10 +5,11 @@
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>Tasso in Music Project: verse analytical encoding sample</title>
+				<title>Vezzosi augelli infra le verdi fronde</title>
 			</titleStmt>
 			<publicationStmt>
-				<p>For Emiliano and Craig</p>
+				<publisher>Tasso in Music Project</publisher>
+				<idno>Tsg16012</idno>
 			</publicationStmt>
 			<sourceDesc>
 				<p>Born digital with examples from Tasso in Music Project</p>

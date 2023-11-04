@@ -55,6 +55,8 @@ class Stanza {
 class Poem {
 	public:
 		std::vector<Stanza> stanzas;
+		std::string catalognum;
+		std::string title;
 };
 
 
@@ -63,7 +65,7 @@ string getRhyme                (const string& info);
 string makeLineMet             (vector<Syllable>& syllables);
 bool   convertPoemToTei        (xml_document& tei, Poem& poem);
 void   printTeiDocument        (xml_document& tei, std::ostream& out);
-void   fillTeiHeaderContents   (xml_node& header);
+void   fillTeiHeaderContents   (xml_node& header, Poem& poem);
 void   fillTeiBodyContents     (xml_node& body, Poem& poem);
 void   addStanzaToTeiBody      (xml_node& body, Stanza& stanza);
 void   addLineToLineGroup      (xml_node& linegroup, Line& verseline);
@@ -100,6 +102,14 @@ bool readPoemData(Poem& poem, istream& input) {
 	bool inStanza = false;
 	HumRegex hre;
 	while (getline(input, line)) {
+		if (hre.search(line, "^@CATALOGNUM\\s*:\\s*([^\\s]+)")) {
+			poem.catalognum = hre.getMatch(1);
+			continue;
+		}
+		if (hre.search(line, "^@TITLE\\s*:\\s*(.+)\\s*")) {
+			poem.title = hre.getMatch(1);
+			continue;
+		}
 		if (line.compare(0, 8, "@MVERSE:") == 0) {
 			poem.stanzas.resize(poem.stanzas.size() + 1);
 			inStanza = true;
@@ -239,7 +249,7 @@ bool convertPoemToTei(xml_document& doc, Poem& poem) {
 	xml_node text = tei.append_child("text");
 	xml_node body = text.append_child("body");
 
-	fillTeiHeaderContents(header);
+	fillTeiHeaderContents(header, poem);
 	fillTeiBodyContents(body, poem);
 
 	return true;
@@ -256,7 +266,8 @@ bool convertPoemToTei(xml_document& doc, Poem& poem) {
 //          <title>Tasso in Music Project: verse anallytical encoding sample</title>
 //       </titleStmt>
 //       <publicationStmt>
-//          <p>For Emiliano and Craig</p>
+//          <publisher>Tasso in Music Project</publisher>
+//          <idno>Trm0048</idno>
 //       </publicationStmt>
 //       <sourceDesc>
 //          <p>Born digital with examples from Tasso in Music</p>
@@ -271,18 +282,21 @@ bool convertPoemToTei(xml_document& doc, Poem& poem) {
 //   </encodingDesc>
 //
 
-void fillTeiHeaderContents(xml_node& header) {
+void fillTeiHeaderContents(xml_node& header, Poem& poem) {
 	xml_node fileDesc = header.append_child("fileDesc");
 	xml_node encodingDesc = header.append_child("encodingDesc");
 
 	// Fill <fileDesc>:
 	xml_node titleStmt = fileDesc.append_child("titleStmt");
 	xml_node title = titleStmt.append_child("title");
-	title.text().set("Tasso in Music Project: verse analytical encoding sample");
+	title.text().set(poem.title.c_str());
 
 	xml_node publicationStmt = fileDesc.append_child("publicationStmt");
-	xml_node p1 = publicationStmt.append_child("p");
-	p1.text().set("For Emiliano and Craig");
+	xml_node publisher = publicationStmt.append_child("publisher");
+	publisher.text().set("Tasso in Music Project");
+
+	xml_node idno = publicationStmt.append_child("idno");
+	idno.text().set(poem.catalognum.c_str());
 
 	xml_node sourceDesc = fileDesc.append_child("sourceDesc");
 	xml_node p2 = sourceDesc.append_child("p");
