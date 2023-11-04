@@ -41,6 +41,10 @@ rhyme: check-rhyme
 check-rhyme:
 	bin/checkRhyme data/aton/*.aton
 
+mu: markup-urls
+markup-urls:
+	@bin/id2tassoMarkupUrl
+
 
 clean:
 	-rm $(DATADIR)/tei/*.tei
