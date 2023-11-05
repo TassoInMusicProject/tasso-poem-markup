@@ -40,8 +40,8 @@
 					<seg type="syl" met="+">pa</seg>
 					<seg type="syl" met="-">ce</seg>
 				</l>
-				<l rhyme="b" met="-+--+--+-+" n="10">
-					<!-- INPUT: Che las+ci_a me: vat+te-ne,_i-ni+quo,_o-mai;+ =B -->
+				<l rhyme="b" met="-+--+--+--+" n="endecasillabo">
+					<!-- INPUT: Che las+ci_a me: vat+te-ne,_i-ni+quo,_o-ma-i;+ =B -->
 					<seg type="syl" met="-">Che </seg>
 					<seg type="syl" met="+">las</seg>
 					<seg type="syl" met="-">ci<c met="_"> </c>a </seg>
@@ -51,7 +51,8 @@
 					<seg type="syl" met="-">ne,<c met="_"> </c>i</seg>
 					<seg type="syl" met="+">ni</seg>
 					<seg type="syl" met="-">quo,<c met="_"> </c>o</seg>
-					<seg type="syl" met="+">mai;</seg>
+					<seg type="syl" met="-">ma</seg>
+					<seg type="syl" met="+">i;</seg>
 				</l>
 				<l rhyme="a" met="-+-+-++--+-" n="endecasillabo" enjamb="yes">
 					<!-- INPUT: Me to+sto_i-gnu+do spir+to,_om+bra se-gua+ce =A+ -->
@@ -67,8 +68,8 @@
 					<seg type="syl" met="+">gua</seg>
 					<seg type="syl" met="-">ce</seg>
 				</l>
-				<l rhyme="b" met="-----+-+-+" n="10">
-					<!-- INPUT: In-di-vi-si-bil-men+te_a ter+go_av-rai.+ =B -->
+				<l rhyme="b" met="-----+-+--+" n="endecasillabo">
+					<!-- INPUT: In-di-vi-si-bil-men+te_a ter+go_av-ra-i.+ =B -->
 					<seg type="syl" met="-">In</seg>
 					<seg type="syl" met="-">di</seg>
 					<seg type="syl" met="-">vi</seg>
@@ -78,7 +79,8 @@
 					<seg type="syl" met="-">te<c met="_"> </c>a </seg>
 					<seg type="syl" met="+">ter</seg>
 					<seg type="syl" met="-">go<c met="_"> </c>av</seg>
-					<seg type="syl" met="+">rai.</seg>
+					<seg type="syl" met="-">ra</seg>
+					<seg type="syl" met="+">i.</seg>
 				</l>
 				<l rhyme="a" met="+-+--+---+-" n="endecasillabo">
 					<!-- INPUT: Nuo+va fu+ria co’ ser+pi_e con la fa+ce =A -->
@@ -94,8 +96,8 @@
 					<seg type="syl" met="+">fa</seg>
 					<seg type="syl" met="-">ce</seg>
 				</l>
-				<l rhyme="b" met="+----++--+" n="10">
-					<!-- INPUT: Tan+to t’a-gi-te-rò+ quan+to t’a-mai.+ =B -->
+				<l rhyme="b" met="+----++---+" n="endecasillabo">
+					<!-- INPUT: Tan+to t’a-gi-te-rò+ quan+to t’a-ma-i.+ =B -->
 					<seg type="syl" met="+">Tan</seg>
 					<seg type="syl" met="-">to </seg>
 					<seg type="syl" met="-">t’a</seg>
@@ -105,7 +107,8 @@
 					<seg type="syl" met="+">quan</seg>
 					<seg type="syl" met="-">to </seg>
 					<seg type="syl" met="-">t’a</seg>
-					<seg type="syl" met="+">mai.</seg>
+					<seg type="syl" met="-">ma</seg>
+					<seg type="syl" met="+">i.</seg>
 				</l>
 				<l rhyme="c" met="---++----+-" n="endecasillabo" enjamb="yes">
 					<!-- INPUT: E s’è de-stin+ ch’e+sca del mar, che schi+vi =C+ -->

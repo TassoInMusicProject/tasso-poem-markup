@@ -100,9 +100,11 @@ sub analyzeFile {
 		}
 		if (($counts[$i] == 7) && ($rhymes[$i] !~ /^[a-z]$/)) {
 			$report .= "* Capitalization problem for rhyme '$rhymes[$i]' in strophe $strophes[$i], at line $lines[$i] for $counts[$i] syllables.\n";
+			$report .= "$inputs[$i]\n";
 		}
 		if (($counts[$i] == 11) && ($rhymes[$i] !~ /^[A-Z]$/)) {
 			$report .= "* Capitalization problem for rhyme '$rhymes[$i]' in strophe $strophes[$i], at line $lines[$i] for $counts[$i] syllables.\n";
+			$report .= "$inputs[$i]\n";
 		}
 		my $r = lc($rhymes[$i]);
 		if ($rhymeMap{$r} =~ /^\s*$/) {
@@ -141,6 +143,8 @@ sub analyzeFile {
 sub getLineInfo {
 	my ($line) = @_;
 	$line =~ s/_&mdash;_/_/g;
+	$line =~ s/&mdash;;/;/g;
+	$line =~ s/&mdash;,/,/g;
 	$line =~ s/&mdash;/ /g;
 	$line =~ s/\?//g;
 	$line =~ s/—/ /g;

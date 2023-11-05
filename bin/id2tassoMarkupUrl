@@ -1,0 +1,23 @@
+#!/usr/bin/perl
+#
+# Programmer:    Craig Stuart Sapp <craig.stanford.edu>
+# Creation Date: Fri Nov  3 18:25:05 PDT 2023
+# Last Modified: Fri Nov  3 18:25:07 PDT 2023
+# Filename:      bin/id2tassoMarkupUrl
+# vim:           ts=3:nowrap
+# Syntax:        perl 5
+#
+# Description:   Convert a catalog number into a TiMP markup page URL.
+#
+
+use strict;
+
+my @list = `cat data/index.txt`;
+chomp @list;
+
+my $urlBase = "https://www.tassomusic.org/markup/?id=";
+
+foreach my $item (@list) {
+	print "$urlBase$item\n";
+}
+

@@ -26,14 +26,13 @@
 	<text>
 		<body>
 			<lg>
-				<l rhyme="a" met="+--+--+-+-+-" n="12">
-					<!-- INPUT: Piac+que-le_as-sai+ che 'n quel+le val+li_om-bro+se =A -->
+				<l rhyme="a" met="+--+-+-+-+-" n="endecasillabo">
+					<!-- INPUT: Piac+que-le_as-sai+ che_'n quel+le val+li_om-bro+se =A -->
 					<seg type="syl" met="+">Piac</seg>
 					<seg type="syl" met="-">que</seg>
 					<seg type="syl" met="-">le<c met="_"> </c>as</seg>
 					<seg type="syl" met="+">sai </seg>
-					<seg type="syl" met="-">che </seg>
-					<seg type="syl" met="-">'n </seg>
+					<seg type="syl" met="-">che<c met="_"> </c>'n </seg>
 					<seg type="syl" met="+">quel</seg>
 					<seg type="syl" met="-">le </seg>
 					<seg type="syl" met="+">val</seg>
