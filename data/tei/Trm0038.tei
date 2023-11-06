@@ -205,7 +205,7 @@
 					<seg type="syl" met="-">ria</seg>
 				</l>
 				<l rhyme="e" met="+----+-+-+-" n="endecasillabo">
-					<!-- INPUT: Can+ti mia ser-vi-tu+te_e_i lac+ci mi+ei =E -->
+					<!-- INPUT: Can+ti mia ser-vi-tu+te_e_i lac+ci mie+i =E -->
 					<seg type="syl" met="+">Can</seg>
 					<seg type="syl" met="-">ti </seg>
 					<seg type="syl" met="-">mia </seg>
@@ -215,8 +215,8 @@
 					<seg type="syl" met="-">te<c met="_"> </c>e<c met="_"> </c>i </seg>
 					<seg type="syl" met="+">lac</seg>
 					<seg type="syl" met="-">ci </seg>
-					<seg type="syl" met="+">mi</seg>
-					<seg type="syl" met="-">ei</seg>
+					<seg type="syl" met="+">mie</seg>
+					<seg type="syl" met="-">i</seg>
 				</l>
 				<l rhyme="c" met="-+---+-+-+-" n="endecasillabo">
 					<!-- INPUT: E tes+sa de gli_af-fan+ni_i-sto+rie_in car+te. =C -->

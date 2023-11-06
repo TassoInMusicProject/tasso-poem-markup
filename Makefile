@@ -39,8 +39,18 @@ index:
 check: check-rhyme
 rhyme: check-rhyme
 check-rhyme:
-	bin/checkRhyme data/aton/*.aton
+	@bin/checkRhyme data/aton/*.aton
 
+
+checkv: check-rhyme-verse
+rhymev: check-rhyme-verse
+check-rhyme-v: check-rhyme-verse
+check-rhyme-verse::
+	@bin/checkRhyme -v data/aton/*.aton
+
+
+url: markup-urls
+urls: markup-urls
 mu: markup-urls
 markup-urls:
 	@bin/id2tassoMarkupUrl

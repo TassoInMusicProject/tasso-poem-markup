@@ -2,7 +2,7 @@
 #
 # Programmer:    Craig Stuart Sapp <craig.stanford.edu>
 # Creation Date: Thu Nov  2 13:17:18 PDT 2023
-# Last Modified: Thu Nov  2 14:22:46 PDT 2023
+# Last Modified: Sun Nov  5 18:12:25 PST 2023
 # Filename:      bin/checkRhyme
 # vim:           ts=3:nowrap
 # Syntax:        perl 5
@@ -11,10 +11,18 @@
 #              * Checks that there are 7 or 11 syllables.
 #              * Checks capitalization of rhyme scheme.
 #              * Checks that rhyme scheme letters are probably correct.
+#              * When -v option added, reports cases where there are two adjacent
+#                vowels in separate words that are not connected with an eilision.
 #
 
 use Getopt::Long;
 use strict;
+
+my $vowelElisionCheck = 0;
+Getopt::Long::Configure("bundling");
+GetOptions (
+   'v' => \$vowelElisionCheck
+);
 
 my @files = sort @ARGV;
 
@@ -86,7 +94,6 @@ sub analyzeFile {
 	}
 
 	my %rhymeMap = {};
-	
 	my $report = "";
 
 	for (my $i=0; $i<@counts; $i++) {
@@ -94,6 +101,12 @@ sub analyzeFile {
 			%rhymeMap = {};
 		}
 		next if $counts[$i] <= 0;
+		if ($vowelElisionCheck) {
+			if ($inputs[$i] =~ /[aeiou][^a-z]* [^a-z]*[aeiou]/i) {
+				$report .= "Potential vowel elision problem in strophe $strophes[$i], at line $lines[$i]:\n";
+				$report .= "$inputs[$i]\n";
+			}
+		}
 		if (!(($counts[$i] == 7) || ($counts[$i] == 11))) {
 			$report .= "* Strange syllable count ($counts[$i]) in strophe $strophes[$i], at line $lines[$i].\n";
 			$report .= "$inputs[$i]\n";
