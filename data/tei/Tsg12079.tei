@@ -26,8 +26,8 @@
 	<text>
 		<body>
 			<lg>
-				<l rhyme="a" met="---+-+-+---" n="endecasillabo" enjamb="yes">
-					<!-- INPUT: Io pur ver-rò+ là do+ve se+te; e voi =A+ -->
+				<l rhyme="a" met="---+-+-+-+-" n="endecasillabo" enjamb="yes">
+					<!-- INPUT: Io pur ver-rò+ là do+ve se+te;_e vo+i =A+ -->
 					<seg type="syl" met="-">Io </seg>
 					<seg type="syl" met="-">pur </seg>
 					<seg type="syl" met="-">ver</seg>
@@ -36,9 +36,9 @@
 					<seg type="syl" met="+">do</seg>
 					<seg type="syl" met="-">ve </seg>
 					<seg type="syl" met="+">se</seg>
-					<seg type="syl" met="-">te; </seg>
-					<seg type="syl" met="-">e </seg>
-					<seg type="syl" met="-">voi</seg>
+					<seg type="syl" met="-">te;<c met="_"> </c>e </seg>
+					<seg type="syl" met="+">vo</seg>
+					<seg type="syl" met="-">i</seg>
 				</l>
 				<l rhyme="b" met="+-+-++-+-+-" n="endecasillabo">
 					<!-- INPUT: Me+co_a-vrò,+ s’an-co+ se+te,_a-ma+te spo+glie. =B -->
@@ -54,19 +54,19 @@
 					<seg type="syl" met="+">spo</seg>
 					<seg type="syl" met="-">glie.</seg>
 				</l>
-				<l rhyme="a" met="-++---+-+--" n="endecasillabo" enjamb="yes">
-					<!-- INPUT: Ma s’e+gli_av+vien che i va+ghi mem+bri suoi =A+ -->
+				<l rhyme="a" met="-++--+-+-+-" n="endecasillabo" enjamb="yes">
+					<!-- INPUT: Ma s’e+gli_av+vien che_i va+ghi mem+bri suo+i =A+ -->
 					<seg type="syl" met="-">Ma </seg>
 					<seg type="syl" met="+">s’e</seg>
 					<seg type="syl" met="+">gli<c met="_"> </c>av</seg>
 					<seg type="syl" met="-">vien </seg>
-					<seg type="syl" met="-">che </seg>
-					<seg type="syl" met="-">i </seg>
+					<seg type="syl" met="-">che<c met="_"> </c>i </seg>
 					<seg type="syl" met="+">va</seg>
 					<seg type="syl" met="-">ghi </seg>
 					<seg type="syl" met="+">mem</seg>
 					<seg type="syl" met="-">bri </seg>
-					<seg type="syl" met="-">suoi</seg>
+					<seg type="syl" met="+">suo</seg>
+					<seg type="syl" met="-">i</seg>
 				</l>
 				<l rhyme="b" met="+--+---+-+-" n="endecasillabo">
 					<!-- INPUT: Sta+ti sian ci+bo di fe-ri+ne vo+glie; =B -->
@@ -83,7 +83,7 @@
 					<seg type="syl" met="-">glie;</seg>
 				</l>
 				<l rhyme="a" met="---+-+-+-+-" n="endecasillabo" enjamb="yes">
-					<!-- INPUT: Vuo' che la boc+ca stes+sa_an-co+ me in+goi, =A+ -->
+					<!-- INPUT: Vuo' che la boc+ca stes+sa_an-co+ me_in-go+i, =A+ -->
 					<seg type="syl" met="-">Vuo' </seg>
 					<seg type="syl" met="-">che </seg>
 					<seg type="syl" met="-">la </seg>
@@ -92,9 +92,9 @@
 					<seg type="syl" met="+">stes</seg>
 					<seg type="syl" met="-">sa<c met="_"> </c>an</seg>
 					<seg type="syl" met="+">co </seg>
-					<seg type="syl" met="-">me </seg>
-					<seg type="syl" met="+">in</seg>
-					<seg type="syl" met="-">goi,</seg>
+					<seg type="syl" met="-">me<c met="_"> </c>in</seg>
+					<seg type="syl" met="+">go</seg>
+					<seg type="syl" met="-">i,</seg>
 				</l>
 				<l rhyme="b" met="-+-+-----+-" n="endecasillabo">
 					<!-- INPUT: E_’l ven+tre chiu+da me che lor rac-co+glie. =B -->

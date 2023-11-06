@@ -27,15 +27,15 @@
 		<body>
 			<lg>
 				<l rhyme="a" met="-+-+-+---+-" n="endecasillabo" enjamb="yes">
-					<!-- INPUT: Io vi+vo?_Io spi+ro_an-co+ra?_E_gli o-di-o+si =A+ -->
+					<!-- INPUT: Io vi+vo?_Io spi+ro_an-co+ra?_E gli_o-di-o+si =A+ -->
 					<seg type="syl" met="-">Io </seg>
 					<seg type="syl" met="+">vi</seg>
 					<seg type="syl" met="-">vo?<c met="_"> </c>Io </seg>
 					<seg type="syl" met="+">spi</seg>
 					<seg type="syl" met="-">ro<c met="_"> </c>an</seg>
 					<seg type="syl" met="+">co</seg>
-					<seg type="syl" met="-">ra?<c met="_"> </c>E<c met="_"> </c>gli </seg>
-					<seg type="syl" met="-">o</seg>
+					<seg type="syl" met="-">ra?<c met="_"> </c>E </seg>
+					<seg type="syl" met="-">gli<c met="_"> </c>o</seg>
 					<seg type="syl" met="-">di</seg>
 					<seg type="syl" met="+">o</seg>
 					<seg type="syl" met="-">si</seg>

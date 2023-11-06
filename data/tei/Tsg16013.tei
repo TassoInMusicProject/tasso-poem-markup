@@ -111,11 +111,11 @@
 					<seg type="syl" met="-">stro.</seg>
 				</l>
 				<l rhyme="c" met="+--+---+-+-" n="endecasillabo">
-					<!-- INPUT: Tac+que-ro_gli al+tri_ad a-scol-tar+lo_in-ten+ti, =C -->
+					<!-- INPUT: Tac+que-ro gli_al+tri_ad a-scol-tar+lo_in-ten+ti, =C -->
 					<seg type="syl" met="+">Tac</seg>
 					<seg type="syl" met="-">que</seg>
-					<seg type="syl" met="-">ro<c met="_"> </c>gli </seg>
-					<seg type="syl" met="+">al</seg>
+					<seg type="syl" met="-">ro </seg>
+					<seg type="syl" met="+">gli<c met="_"> </c>al</seg>
 					<seg type="syl" met="-">tri<c met="_"> </c>ad </seg>
 					<seg type="syl" met="-">a</seg>
 					<seg type="syl" met="-">scol</seg>

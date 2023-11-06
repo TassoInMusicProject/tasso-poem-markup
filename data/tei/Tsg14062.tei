@@ -110,33 +110,33 @@
 					<seg type="syl" met="+">co</seg>
 					<seg type="syl" met="-">glie;</seg>
 				</l>
-				<l rhyme="c" met="+-+--+--+--" n="endecasillabo" enjamb="yes">
-					<!-- INPUT: Que+sto gri+da na-tu+ra: or dun+que voi =C+ -->
+				<l rhyme="c" met="+-+--+-+-+-" n="endecasillabo" enjamb="yes">
+					<!-- INPUT: Que+sto gri+da na-tu+ra:_or dun+que vo+i =C+ -->
 					<seg type="syl" met="+">Que</seg>
 					<seg type="syl" met="-">sto </seg>
 					<seg type="syl" met="+">gri</seg>
 					<seg type="syl" met="-">da </seg>
 					<seg type="syl" met="-">na</seg>
 					<seg type="syl" met="+">tu</seg>
-					<seg type="syl" met="-">ra: </seg>
-					<seg type="syl" met="-">or </seg>
+					<seg type="syl" met="-">ra:<c met="_"> </c>or </seg>
 					<seg type="syl" met="+">dun</seg>
 					<seg type="syl" met="-">que </seg>
-					<seg type="syl" met="-">voi</seg>
+					<seg type="syl" met="+">vo</seg>
+					<seg type="syl" met="-">i</seg>
 				</l>
-				<l rhyme="c" met="---+-+--+--" n="endecasillabo">
-					<!-- INPUT: In-du-re-re+te l’al+ma ai det+ti suoi? =C -->
+				<l rhyme="c" met="---+-+-+-+-" n="endecasillabo">
+					<!-- INPUT: In-du-re-re+te l’al+ma_ai det+ti suo+i? =C -->
 					<seg type="syl" met="-">In</seg>
 					<seg type="syl" met="-">du</seg>
 					<seg type="syl" met="-">re</seg>
 					<seg type="syl" met="+">re</seg>
 					<seg type="syl" met="-">te </seg>
 					<seg type="syl" met="+">l’al</seg>
-					<seg type="syl" met="-">ma </seg>
-					<seg type="syl" met="-">ai </seg>
+					<seg type="syl" met="-">ma<c met="_"> </c>ai </seg>
 					<seg type="syl" met="+">det</seg>
 					<seg type="syl" met="-">ti </seg>
-					<seg type="syl" met="-">suoi?</seg>
+					<seg type="syl" met="+">suo</seg>
+					<seg type="syl" met="-">i?</seg>
 				</l>
 			</lg>
 		</body>

@@ -96,16 +96,16 @@
 					<seg type="syl" met="+">ca</seg>
 					<seg type="syl" met="-">ro</seg>
 				</l>
-				<l rhyme="b" met="+---+--+-+-" n="endecasillabo">
-					<!-- INPUT: Trop+po, e pur trop+po pre-zio+so pa+sto! =B -->
+				<l rhyme="b" met="+--+---+-+-" n="endecasillabo">
+					<!-- INPUT: Trop+po,_e pur trop+po pre-zi-o+so pa+sto! =B -->
 					<seg type="syl" met="+">Trop</seg>
-					<seg type="syl" met="-">po, </seg>
-					<seg type="syl" met="-">e </seg>
+					<seg type="syl" met="-">po,<c met="_"> </c>e </seg>
 					<seg type="syl" met="-">pur </seg>
 					<seg type="syl" met="+">trop</seg>
 					<seg type="syl" met="-">po </seg>
 					<seg type="syl" met="-">pre</seg>
-					<seg type="syl" met="+">zio</seg>
+					<seg type="syl" met="-">zi</seg>
+					<seg type="syl" met="+">o</seg>
 					<seg type="syl" met="-">so </seg>
 					<seg type="syl" met="+">pa</seg>
 					<seg type="syl" met="-">sto!</seg>

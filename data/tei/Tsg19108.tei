@@ -110,8 +110,8 @@
 					<seg type="syl" met="+">vo</seg>
 					<seg type="syl" met="-">le.</seg>
 				</l>
-				<l rhyme="c" met="+---+--+---" n="endecasillabo" enjamb="yes">
-					<!-- INPUT: Le+ci-to sia ch’o+ra ti strin+ga, e poi =C+ -->
+				<l rhyme="c" met="+---+--+-+-" n="endecasillabo" enjamb="yes">
+					<!-- INPUT: Le+ci-to sia ch’o+ra ti strin+ga,_e po+i =C+ -->
 					<seg type="syl" met="+">Le</seg>
 					<seg type="syl" met="-">ci</seg>
 					<seg type="syl" met="-">to </seg>
@@ -120,23 +120,23 @@
 					<seg type="syl" met="-">ra </seg>
 					<seg type="syl" met="-">ti </seg>
 					<seg type="syl" met="+">strin</seg>
-					<seg type="syl" met="-">ga, </seg>
-					<seg type="syl" met="-">e </seg>
-					<seg type="syl" met="-">poi</seg>
+					<seg type="syl" met="-">ga,<c met="_"> </c>e </seg>
+					<seg type="syl" met="+">po</seg>
+					<seg type="syl" met="-">i</seg>
 				</l>
-				<l rhyme="c" met="+--+-+--+--" n="endecasillabo">
-					<!-- INPUT: Ver+si lo spir+to mi+o fra_i lab+bri tuoi. =C -->
+				<l rhyme="c" met="+--+---+-+-" n="endecasillabo">
+					<!-- INPUT: Ver+si lo spir+to mio fra_i lab+bri tuo+i. =C -->
 					<seg type="syl" met="+">Ver</seg>
 					<seg type="syl" met="-">si </seg>
 					<seg type="syl" met="-">lo </seg>
 					<seg type="syl" met="+">spir</seg>
 					<seg type="syl" met="-">to </seg>
-					<seg type="syl" met="+">mi</seg>
-					<seg type="syl" met="-">o </seg>
+					<seg type="syl" met="-">mio </seg>
 					<seg type="syl" met="-">fra<c met="_"> </c>i </seg>
 					<seg type="syl" met="+">lab</seg>
 					<seg type="syl" met="-">bri </seg>
-					<seg type="syl" met="-">tuoi.</seg>
+					<seg type="syl" met="+">tuo</seg>
+					<seg type="syl" met="-">i.</seg>
 				</l>
 			</lg>
 		</body>
