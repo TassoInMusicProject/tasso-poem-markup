@@ -527,13 +527,13 @@
 					<seg type="syl" met="-">ma</seg>
 				</l>
 				<l rhyme="a" met="-+-+-+-+-+-" n="endecasillabo">
-					<!-- INPUT: Tra_i fio+ri_e l'er+be_ov'-è+ spa-ri+to_il fo+co! =A -->
+					<!-- INPUT: Tra_i fio+ri_e l'er+be_o-v'è+ spa-ri+to_il fo+co! =A -->
 					<seg type="syl" met="-">Tra<c met="_"> </c>i </seg>
 					<seg type="syl" met="+">fio</seg>
 					<seg type="syl" met="-">ri<c met="_"> </c>e </seg>
 					<seg type="syl" met="+">l'er</seg>
-					<seg type="syl" met="-">be<c met="_"> </c>ov'</seg>
-					<seg type="syl" met="+">è </seg>
+					<seg type="syl" met="-">be<c met="_"> </c>o</seg>
+					<seg type="syl" met="+">v'è </seg>
 					<seg type="syl" met="-">spa</seg>
 					<seg type="syl" met="+">ri</seg>
 					<seg type="syl" met="-">to<c met="_"> </c>il </seg>

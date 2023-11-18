@@ -40,10 +40,10 @@
 					<seg type="syl" met="+">si</seg>
 					<seg type="syl" met="-">a,</seg>
 				</l>
-				<l rhyme="a" met="--+--+-" n="settenario">
-					<!-- INPUT: Dov'-è l'a+ni-ma mi+a? =a -->
-					<seg type="syl" met="-">Dov'</seg>
-					<seg type="syl" met="-">è </seg>
+				<l rhyme="a" met="-++--+-" n="settenario">
+					<!-- INPUT: Do-v'è+ l'a+ni-ma mi+a? =a -->
+					<seg type="syl" met="-">Do</seg>
+					<seg type="syl" met="+">v'è </seg>
 					<seg type="syl" met="+">l'a</seg>
 					<seg type="syl" met="-">ni</seg>
 					<seg type="syl" met="-">ma </seg>

@@ -97,13 +97,13 @@
 					<seg type="syl" met="-">i</seg>
 				</l>
 				<l rhyme="b" met="-+-+-+-+-+-" n="endecasillabo">
-					<!-- INPUT: Ov’-è+ la fiam+ma?_ov’-è_il+ bel rag+gio_a-sco+so? =B -->
-					<seg type="syl" met="-">Ov’</seg>
-					<seg type="syl" met="+">è </seg>
+					<!-- INPUT: O-v’è+ la fiam+ma?_o-v’è_il+ bel rag+gio_a-sco+so? =B -->
+					<seg type="syl" met="-">O</seg>
+					<seg type="syl" met="+">v’è </seg>
 					<seg type="syl" met="-">la </seg>
 					<seg type="syl" met="+">fiam</seg>
-					<seg type="syl" met="-">ma?<c met="_"> </c>ov’</seg>
-					<seg type="syl" met="+">è<c met="_"> </c>il </seg>
+					<seg type="syl" met="-">ma?<c met="_"> </c>o</seg>
+					<seg type="syl" met="+">v’è<c met="_"> </c>il </seg>
 					<seg type="syl" met="-">bel </seg>
 					<seg type="syl" met="+">rag</seg>
 					<seg type="syl" met="-">gio<c met="_"> </c>a</seg>
@@ -125,13 +125,13 @@
 					<seg type="syl" met="-">glio</seg>
 				</l>
 				<l rhyme="c" met="-+-+-+-+-+-" n="endecasillabo">
-					<!-- INPUT: Ov’-è+ fug-gi+to?_ov’-è_il+ se-ren+ del ci+glio? =C -->
-					<seg type="syl" met="-">Ov’</seg>
-					<seg type="syl" met="+">è </seg>
+					<!-- INPUT: O-v’è+ fug-gi+to?_o-v’è_il+ se-ren+ del ci+glio? =C -->
+					<seg type="syl" met="-">O</seg>
+					<seg type="syl" met="+">v’è </seg>
 					<seg type="syl" met="-">fug</seg>
 					<seg type="syl" met="+">gi</seg>
-					<seg type="syl" met="-">to?<c met="_"> </c>ov’</seg>
-					<seg type="syl" met="+">è<c met="_"> </c>il </seg>
+					<seg type="syl" met="-">to?<c met="_"> </c>o</seg>
+					<seg type="syl" met="+">v’è<c met="_"> </c>il </seg>
 					<seg type="syl" met="-">se</seg>
 					<seg type="syl" met="+">ren </seg>
 					<seg type="syl" met="-">del </seg>

@@ -127,13 +127,13 @@
 					<seg type="syl" met="-">stra</seg>
 				</l>
 				<l rhyme="a" met="-+---+-+-+-" n="endecasillabo">
-					<!-- INPUT: La boc+ca si fer&icir-c;r+ di ba+cio_ar-den+te. =A -->
+					<!-- INPUT: La boc+ca si fe-r&icirc;r+ di ba+cio_ar-den+te. =A -->
 					<seg type="syl" met="-">La </seg>
 					<seg type="syl" met="+">boc</seg>
 					<seg type="syl" met="-">ca </seg>
 					<seg type="syl" met="-">si </seg>
-					<seg type="syl" met="-">fer&amp;icir</seg>
-					<seg type="syl" met="+">c;r </seg>
+					<seg type="syl" met="-">fe</seg>
+					<seg type="syl" met="+">r&amp;icirc;r </seg>
 					<seg type="syl" met="-">di </seg>
 					<seg type="syl" met="+">ba</seg>
 					<seg type="syl" met="-">cio<c met="_"> </c>ar</seg>
@@ -170,9 +170,9 @@
 					<seg type="syl" met="+">vò</seg>
 					<seg type="syl" met="-">to</seg>
 				</l>
-				<l rhyme="e" met="-+---+-+-+-" n="endecasillabo">
-					<!-- INPUT: Tan-t'ar+me_e tai per-cos+se_u-sar+ da scher+zo? =E -->
-					<seg type="syl" met="-">Tan</seg>
+				<l rhyme="e" met="++---+-+-+-" n="endecasillabo">
+					<!-- INPUT: Tan+t'ar+me_e tai per-cos+se_u-sar+ da scher+zo? =E -->
+					<seg type="syl" met="+">Tan</seg>
 					<seg type="syl" met="+">t'ar</seg>
 					<seg type="syl" met="-">me<c met="_"> </c>e </seg>
 					<seg type="syl" met="-">tai </seg>

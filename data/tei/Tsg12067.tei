@@ -40,8 +40,8 @@
 					<seg type="syl" met="+">mon</seg>
 					<seg type="syl" met="-">te</seg>
 				</l>
-				<l rhyme="b" met="-+---+--++-" n="endecasillabo">
-					<!-- INPUT: Sca-tu+ria, mor-mo-ran+do,_un pic-ciol+ ri+o. =B -->
+				<l rhyme="b" met="-+---+-+-+-" n="endecasillabo">
+					<!-- INPUT: Sca-tu+ria, mor-mo-ran+do,_un pic+ciol ri+o. =B -->
 					<seg type="syl" met="-">Sca</seg>
 					<seg type="syl" met="+">tu</seg>
 					<seg type="syl" met="-">ria, </seg>
@@ -49,8 +49,8 @@
 					<seg type="syl" met="-">mo</seg>
 					<seg type="syl" met="+">ran</seg>
 					<seg type="syl" met="-">do,<c met="_"> </c>un </seg>
-					<seg type="syl" met="-">pic</seg>
-					<seg type="syl" met="+">ciol </seg>
+					<seg type="syl" met="+">pic</seg>
+					<seg type="syl" met="-">ciol </seg>
 					<seg type="syl" met="+">ri</seg>
 					<seg type="syl" met="-">o.</seg>
 				</l>

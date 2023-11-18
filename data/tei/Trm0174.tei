@@ -201,15 +201,15 @@
 					<seg type="syl" met="-">me,</seg>
 				</l>
 				<l rhyme="d" met="---+-+-+-+-" n="endecasillabo" enjamb="yes">
-					<!-- INPUT: Se fa, d'on-d'e+gli par+te,_ov'-e+gli stas+si, =D+ -->
+					<!-- INPUT: Se fa, d'on-d'e+gli par+te,_o-v'e+gli stas+si, =D+ -->
 					<seg type="syl" met="-">Se </seg>
 					<seg type="syl" met="-">fa, </seg>
 					<seg type="syl" met="-">d'on</seg>
 					<seg type="syl" met="+">d'e</seg>
 					<seg type="syl" met="-">gli </seg>
 					<seg type="syl" met="+">par</seg>
-					<seg type="syl" met="-">te,<c met="_"> </c>ov'</seg>
-					<seg type="syl" met="+">e</seg>
+					<seg type="syl" met="-">te,<c met="_"> </c>o</seg>
+					<seg type="syl" met="+">v'e</seg>
 					<seg type="syl" met="-">gli </seg>
 					<seg type="syl" met="+">stas</seg>
 					<seg type="syl" met="-">si,</seg>

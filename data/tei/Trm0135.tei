@@ -137,15 +137,15 @@
 					<seg type="syl" met="-">ro,</seg>
 				</l>
 				<l rhyme="d" met="--+--+-+-+-" n="endecasillabo">
-					<!-- INPUT: Se non ba+sta nel tron+co,_ev'-ei+ mi li+ma =D -->
+					<!-- INPUT: Se non ba+sta nel tron+co,_e-v'ei+ mi li+ma =D -->
 					<seg type="syl" met="-">Se </seg>
 					<seg type="syl" met="-">non </seg>
 					<seg type="syl" met="+">ba</seg>
 					<seg type="syl" met="-">sta </seg>
 					<seg type="syl" met="-">nel </seg>
 					<seg type="syl" met="+">tron</seg>
-					<seg type="syl" met="-">co,<c met="_"> </c>ev'</seg>
-					<seg type="syl" met="+">ei </seg>
+					<seg type="syl" met="-">co,<c met="_"> </c>e</seg>
+					<seg type="syl" met="+">v'ei </seg>
 					<seg type="syl" met="-">mi </seg>
 					<seg type="syl" met="+">li</seg>
 					<seg type="syl" met="-">ma</seg>
