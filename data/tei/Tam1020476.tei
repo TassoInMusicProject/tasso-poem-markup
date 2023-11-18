@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>E fatto, non so come, astuto e scaltro</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Tasso in Music Project</publisher>
+				<idno>Tam1020476</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Born digital with examples from Tasso in Music Project</p>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<metDecl type="met">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+				<metSym value="_">elision (synalepha?)</metSym>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<lg>
+				<l rhyme="a" met="-+---+-+-+-" n="endecasillabo">
+					<!-- INPUT: E fat+to, non so co+me,_a-stu+to_e scal+tro =A -->
+					<seg type="syl" met="-">E </seg>
+					<seg type="syl" met="+">fat</seg>
+					<seg type="syl" met="-">to, </seg>
+					<seg type="syl" met="-">non </seg>
+					<seg type="syl" met="-">so </seg>
+					<seg type="syl" met="+">co</seg>
+					<seg type="syl" met="-">me,<c met="_"> </c>a</seg>
+					<seg type="syl" met="+">stu</seg>
+					<seg type="syl" met="-">to<c met="_"> </c>e </seg>
+					<seg type="syl" met="+">scal</seg>
+					<seg type="syl" met="-">tro</seg>
+				</l>
+				<l rhyme="b" met="+--+-+-+-+-" n="endecasillabo" enjamb="yes">
+					<!-- INPUT: Più+ de l'u-sa+to (guar+da quan+to_A-mo+re =B+ -->
+					<seg type="syl" met="+">Più </seg>
+					<seg type="syl" met="-">de </seg>
+					<seg type="syl" met="-">l'u</seg>
+					<seg type="syl" met="+">sa</seg>
+					<seg type="syl" met="-">to </seg>
+					<seg type="syl" met="+">(guar</seg>
+					<seg type="syl" met="-">da </seg>
+					<seg type="syl" met="+">quan</seg>
+					<seg type="syl" met="-">to<c met="_"> </c>A</seg>
+					<seg type="syl" met="+">mo</seg>
+					<seg type="syl" met="-">re</seg>
+				</l>
+				<l rhyme="c" met="-+---+---+-" n="endecasillabo" enjamb="yes">
+					<!-- INPUT: A-guz+za l'in-tel-let+to!) mi so-ven+ne =C+ -->
+					<seg type="syl" met="-">A</seg>
+					<seg type="syl" met="+">guz</seg>
+					<seg type="syl" met="-">za </seg>
+					<seg type="syl" met="-">l'in</seg>
+					<seg type="syl" met="-">tel</seg>
+					<seg type="syl" met="+">let</seg>
+					<seg type="syl" met="-">to!) </seg>
+					<seg type="syl" met="-">mi </seg>
+					<seg type="syl" met="-">so</seg>
+					<seg type="syl" met="+">ven</seg>
+					<seg type="syl" met="-">ne</seg>
+				</l>
+				<l rhyme="d" met="--+--+---+-" n="endecasillabo" enjamb="yes">
+					<!-- INPUT: D'un in-gan+no gen-ti+le co_'l qual i+o =D+ -->
+					<seg type="syl" met="-">D'un </seg>
+					<seg type="syl" met="-">in</seg>
+					<seg type="syl" met="+">gan</seg>
+					<seg type="syl" met="-">no </seg>
+					<seg type="syl" met="-">gen</seg>
+					<seg type="syl" met="+">ti</seg>
+					<seg type="syl" met="-">le </seg>
+					<seg type="syl" met="-">co<c met="_"> </c>'l </seg>
+					<seg type="syl" met="-">qual </seg>
+					<seg type="syl" met="+">i</seg>
+					<seg type="syl" met="-">o</seg>
+				</l>
+				<l rhyme="e" met="-+-+-+---+-" n="endecasillabo">
+					<!-- INPUT: Re-car+ po-tes+si_a fi+ne_il mio ta-len+to; =E -->
+					<seg type="syl" met="-">Re</seg>
+					<seg type="syl" met="+">car </seg>
+					<seg type="syl" met="-">po</seg>
+					<seg type="syl" met="+">tes</seg>
+					<seg type="syl" met="-">si<c met="_"> </c>a </seg>
+					<seg type="syl" met="+">fi</seg>
+					<seg type="syl" met="-">ne<c met="_"> </c>il </seg>
+					<seg type="syl" met="-">mio </seg>
+					<seg type="syl" met="-">ta</seg>
+					<seg type="syl" met="+">len</seg>
+					<seg type="syl" met="-">to;</seg>
+				</l>
+				<l rhyme="f" met="--+--+-+-+-" n="endecasillabo" enjamb="yes">
+					<!-- INPUT: Che fin-gen+do ch'u-n'a+pe_ha-ves+se mor+so =F+ -->
+					<seg type="syl" met="-">Che </seg>
+					<seg type="syl" met="-">fin</seg>
+					<seg type="syl" met="+">gen</seg>
+					<seg type="syl" met="-">do </seg>
+					<seg type="syl" met="-">ch'u</seg>
+					<seg type="syl" met="+">n'a</seg>
+					<seg type="syl" met="-">pe<c met="_"> </c>ha</seg>
+					<seg type="syl" met="+">ves</seg>
+					<seg type="syl" met="-">se </seg>
+					<seg type="syl" met="+">mor</seg>
+					<seg type="syl" met="-">so</seg>
+				</l>
+				<l rhyme="g" met="--+--+---+-" n="endecasillabo" enjamb="yes">
+					<!-- INPUT: Il mio la+bro di sot+to,_in-co-min-cia+i =G+ -->
+					<seg type="syl" met="-">Il </seg>
+					<seg type="syl" met="-">mio </seg>
+					<seg type="syl" met="+">la</seg>
+					<seg type="syl" met="-">bro </seg>
+					<seg type="syl" met="-">di </seg>
+					<seg type="syl" met="+">sot</seg>
+					<seg type="syl" met="-">to,<c met="_"> </c>in</seg>
+					<seg type="syl" met="-">co</seg>
+					<seg type="syl" met="-">min</seg>
+					<seg type="syl" met="+">cia</seg>
+					<seg type="syl" met="-">i</seg>
+				</l>
+				<l rhyme="h" met="---+---+-+-" n="endecasillabo" enjamb="yes">
+					<!-- INPUT: A la-men-tar+mi di co-tal+ ma-nie+ra, =H+ -->
+					<seg type="syl" met="-">A </seg>
+					<seg type="syl" met="-">la</seg>
+					<seg type="syl" met="-">men</seg>
+					<seg type="syl" met="+">tar</seg>
+					<seg type="syl" met="-">mi </seg>
+					<seg type="syl" met="-">di </seg>
+					<seg type="syl" met="-">co</seg>
+					<seg type="syl" met="+">tal </seg>
+					<seg type="syl" met="-">ma</seg>
+					<seg type="syl" met="+">nie</seg>
+					<seg type="syl" met="-">ra,</seg>
+				</l>
+				<l rhyme="i" met="-+---+---+-" n="endecasillabo" enjamb="yes">
+					<!-- INPUT: Che quel+la me-di-ci+na che la lin+gua =I+ -->
+					<seg type="syl" met="-">Che </seg>
+					<seg type="syl" met="+">quel</seg>
+					<seg type="syl" met="-">la </seg>
+					<seg type="syl" met="-">me</seg>
+					<seg type="syl" met="-">di</seg>
+					<seg type="syl" met="+">ci</seg>
+					<seg type="syl" met="-">na </seg>
+					<seg type="syl" met="-">che </seg>
+					<seg type="syl" met="-">la </seg>
+					<seg type="syl" met="+">lin</seg>
+					<seg type="syl" met="-">gua</seg>
+				</l>
+				<l rhyme="j" met="---+-+---+-" n="endecasillabo">
+					<!-- INPUT: Non ri-chie-de+va,_il vol+to ri-chie-de+va. =J -->
+					<seg type="syl" met="-">Non </seg>
+					<seg type="syl" met="-">ri</seg>
+					<seg type="syl" met="-">chie</seg>
+					<seg type="syl" met="+">de</seg>
+					<seg type="syl" met="-">va,<c met="_"> </c>il </seg>
+					<seg type="syl" met="+">vol</seg>
+					<seg type="syl" met="-">to </seg>
+					<seg type="syl" met="-">ri</seg>
+					<seg type="syl" met="-">chie</seg>
+					<seg type="syl" met="+">de</seg>
+					<seg type="syl" met="-">va.</seg>
+				</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

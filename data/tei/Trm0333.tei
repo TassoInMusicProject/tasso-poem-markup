@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Gelo ha Madonna il seno, e fiamma il volto</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Tasso in Music Project</publisher>
+				<idno>Trm0333</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Born digital with examples from Tasso in Music Project</p>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<metDecl type="met">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+				<metSym value="_">elision (synalepha?)</metSym>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<lg>
+				<l rhyme="a" met="+--+-+-+-+-" n="endecasillabo">
+					<!-- INPUT: Ge+lo_ha Ma-don+na_il se+no,_e fiam+ma_il vol+to; =A -->
+					<seg type="syl" met="+">Ge</seg>
+					<seg type="syl" met="-">lo<c met="_"> </c>ha </seg>
+					<seg type="syl" met="-">Ma</seg>
+					<seg type="syl" met="+">don</seg>
+					<seg type="syl" met="-">na<c met="_"> </c>il </seg>
+					<seg type="syl" met="+">se</seg>
+					<seg type="syl" met="-">no,<c met="_"> </c>e </seg>
+					<seg type="syl" met="+">fiam</seg>
+					<seg type="syl" met="-">ma<c met="_"> </c>il </seg>
+					<seg type="syl" met="+">vol</seg>
+					<seg type="syl" met="-">to;</seg>
+				</l>
+				<l rhyme="b" met="--+--+-" n="settenario">
+					<!-- INPUT: Io son ghiac+cio di fuo+re =b -->
+					<seg type="syl" met="-">Io </seg>
+					<seg type="syl" met="-">son </seg>
+					<seg type="syl" met="+">ghiac</seg>
+					<seg type="syl" met="-">cio </seg>
+					<seg type="syl" met="-">di </seg>
+					<seg type="syl" met="+">fuo</seg>
+					<seg type="syl" met="-">re</seg>
+				</l>
+				<l rhyme="a" met="-+-+-+-" n="settenario">
+					<!-- INPUT: E_'l fo+co_ho den+tro_ac-col+to. =a -->
+					<seg type="syl" met="-">E<c met="_"> </c>'l </seg>
+					<seg type="syl" met="+">fo</seg>
+					<seg type="syl" met="-">co<c met="_"> </c>ho </seg>
+					<seg type="syl" met="+">den</seg>
+					<seg type="syl" met="-">tro<c met="_"> </c>ac</seg>
+					<seg type="syl" met="+">col</seg>
+					<seg type="syl" met="-">to.</seg>
+				</l>
+				<l rhyme="b" met="+-+--+-" n="settenario" enjamb="yes">
+					<!-- INPUT: Que+sto_av-vien,+ per-ch'A-mo+re =b+ -->
+					<seg type="syl" met="+">Que</seg>
+					<seg type="syl" met="-">sto<c met="_"> </c>av</seg>
+					<seg type="syl" met="+">vien, </seg>
+					<seg type="syl" met="-">per</seg>
+					<seg type="syl" met="-">ch'A</seg>
+					<seg type="syl" met="+">mo</seg>
+					<seg type="syl" met="-">re</seg>
+				</l>
+				<l rhyme="a" met="---+-+---+-" n="endecasillabo">
+					<!-- INPUT: Ne la sua fron+te_al-ber+ga_e nel mio pet+to, =A -->
+					<seg type="syl" met="-">Ne </seg>
+					<seg type="syl" met="-">la </seg>
+					<seg type="syl" met="-">sua </seg>
+					<seg type="syl" met="+">fron</seg>
+					<seg type="syl" met="-">te<c met="_"> </c>al</seg>
+					<seg type="syl" met="+">ber</seg>
+					<seg type="syl" met="-">ga<c met="_"> </c>e </seg>
+					<seg type="syl" met="-">nel </seg>
+					<seg type="syl" met="-">mio </seg>
+					<seg type="syl" met="+">pet</seg>
+					<seg type="syl" met="-">to,</seg>
+				</l>
+				<l rhyme="a" met="+-+--+-" n="settenario">
+					<!-- INPUT: Né+ mai can+gia ri-cet+to =a -->
+					<seg type="syl" met="+">Né </seg>
+					<seg type="syl" met="-">mai </seg>
+					<seg type="syl" met="+">can</seg>
+					<seg type="syl" met="-">gia </seg>
+					<seg type="syl" met="-">ri</seg>
+					<seg type="syl" met="+">cet</seg>
+					<seg type="syl" met="-">to</seg>
+				</l>
+				<l rhyme="b" met="+-+--++--+-" n="endecasillabo">
+					<!-- INPUT: Sì+ ch'io l'ab+bia ne gli_oc+chi,_el+la nel co+re. =B -->
+					<seg type="syl" met="+">Sì </seg>
+					<seg type="syl" met="-">ch'io </seg>
+					<seg type="syl" met="+">l'ab</seg>
+					<seg type="syl" met="-">bia </seg>
+					<seg type="syl" met="-">ne </seg>
+					<seg type="syl" met="+">gli<c met="_"> </c>oc</seg>
+					<seg type="syl" met="+">chi,<c met="_"> </c>el</seg>
+					<seg type="syl" met="-">la </seg>
+					<seg type="syl" met="-">nel </seg>
+					<seg type="syl" met="+">co</seg>
+					<seg type="syl" met="-">re.</seg>
+				</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Dunque andar non vogliamo? Andare io voglio</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Tasso in Music Project</publisher>
+				<idno>Tam2031109</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Born digital with examples from Tasso in Music Project</p>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<metDecl type="met">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+				<metSym value="_">elision (synalepha?)</metSym>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<lg>
+				<l rhyme="a" met="-+-+--+-" n="8">
+					<!-- INPUT: TIRSI: Dun+que_an-dar+ non vo-glia+mo? =a -->
+					<seg type="syl" met="-">TIRSI: </seg>
+					<seg type="syl" met="+">Dun</seg>
+					<seg type="syl" met="-">que<c met="_"> </c>an</seg>
+					<seg type="syl" met="+">dar </seg>
+					<seg type="syl" met="-">non </seg>
+					<seg type="syl" met="-">vo</seg>
+					<seg type="syl" met="+">glia</seg>
+					<seg type="syl" met="-">mo?</seg>
+				</l>
+				<l rhyme="b" met="--+-+-+-" n="8">
+					<!-- INPUT: AMINTA: An-da+re vo+gli-o_i+o, =b -->
+					<seg type="syl" met="-">AMINTA: </seg>
+					<seg type="syl" met="-">An</seg>
+					<seg type="syl" met="+">da</seg>
+					<seg type="syl" met="-">re </seg>
+					<seg type="syl" met="+">vo</seg>
+					<seg type="syl" met="-">gli</seg>
+					<seg type="syl" met="+">o<c met="_"> </c>i</seg>
+					<seg type="syl" met="-">o,</seg>
+				</l>
+				<l rhyme="c" met="--+--+-" n="settenario">
+					<!-- INPUT: Ma non do+ve tu sti+mi. =c -->
+					<seg type="syl" met="-">Ma </seg>
+					<seg type="syl" met="-">non </seg>
+					<seg type="syl" met="+">do</seg>
+					<seg type="syl" met="-">ve </seg>
+					<seg type="syl" met="-">tu </seg>
+					<seg type="syl" met="+">sti</seg>
+					<seg type="syl" met="-">mi.</seg>
+				</l>
+				<l rhyme="d" met="--+-" n="4">
+					<!-- INPUT: TIRSI: E do+ve? =d -->
+					<seg type="syl" met="-">TIRSI: </seg>
+					<seg type="syl" met="-">E </seg>
+					<seg type="syl" met="+">do</seg>
+					<seg type="syl" met="-">ve?</seg>
+				</l>
+				<l rhyme="e" met="--+-" n="4">
+					<!-- INPUT: AMINTA: A mor+te, =e -->
+					<seg type="syl" met="-">AMINTA: </seg>
+					<seg type="syl" met="-">A </seg>
+					<seg type="syl" met="+">mor</seg>
+					<seg type="syl" met="-">te,</seg>
+				</l>
+				<l rhyme="f" met="+-----+--+-" n="endecasillabo" enjamb="yes">
+					<!-- INPUT: S'al+tro_in mio pro' non hai fat+to che quan+to =F+ -->
+					<seg type="syl" met="+">S'al</seg>
+					<seg type="syl" met="-">tro<c met="_"> </c>in </seg>
+					<seg type="syl" met="-">mio </seg>
+					<seg type="syl" met="-">pro' </seg>
+					<seg type="syl" met="-">non </seg>
+					<seg type="syl" met="-">hai </seg>
+					<seg type="syl" met="+">fat</seg>
+					<seg type="syl" met="-">to </seg>
+					<seg type="syl" met="-">che </seg>
+					<seg type="syl" met="+">quan</seg>
+					<seg type="syl" met="-">to</seg>
+				</l>
+				<l rhyme="g" met="+--+-" n="5">
+					<!-- INPUT: Ho+ra mi nar+ri =g -->
+					<seg type="syl" met="+">Ho</seg>
+					<seg type="syl" met="-">ra </seg>
+					<seg type="syl" met="-">mi </seg>
+					<seg type="syl" met="+">nar</seg>
+					<seg type="syl" met="-">ri</seg>
+				</l>
+				<l rhyme="h" met="--+-+-+-" n="8">
+					<!-- INPUT: TIRSI: E po+co par+ti que+sto? =h -->
+					<seg type="syl" met="-">TIRSI: </seg>
+					<seg type="syl" met="-">E </seg>
+					<seg type="syl" met="+">po</seg>
+					<seg type="syl" met="-">co </seg>
+					<seg type="syl" met="+">par</seg>
+					<seg type="syl" met="-">ti </seg>
+					<seg type="syl" met="+">que</seg>
+					<seg type="syl" met="-">sto?</seg>
+				</l>
+			</lg>
+		</body>
+	</text>
+</TEI>
